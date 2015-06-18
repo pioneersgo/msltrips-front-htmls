@@ -1,0 +1,392 @@
+/*
+* MSL
+* Copyright 2013, MSL
+*/
+/* Table of Content
+==================================================
+	#Document Setup
+	#Typology
+	#HEADER
+	#TOP ATTRACTIONS
+	#TOUR PACKAGES
+	#FOOTER
+
+
+/* #Document Setup
+================================================== */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+	max-width: 1009px;
+}
+.btn-responsive-nav {
+	display: none;
+}
+/* #Typology
+================================================== */
+h2 {
+	color: #ff4000;
+	font-size: 20px;
+	line-height: 24px;
+}
+.tab-container {
+	overflow: hidden;
+}
+/* #HEADER
+================================================== */
+header {
+	background: url('../img/header-nav-bg2.png') repeat-x;
+	height: 90px;
+	position: relative;
+	z-index: 999;
+}
+.logo {
+	/*float:left;*/
+	position: absolute;
+}
+.nav-main-collapse {
+	float: left;
+}
+.nav-main {
+	padding-left: 87px;
+	padding-top: 4px;
+}
+.nav > li {
+	display: inline-block;
+	border-right: 1px solid #dadada;
+	padding-right: 10px;
+}
+.nav > li > a {
+	background: url('../img/icons/nav-icon.png') center right no-repeat;
+	font-size: 12px;
+	line-height: 16px;
+	color: #333333;
+	padding: 10px 21px;
+}
+.nav > li > a:hover {
+	background-color: transparent;
+}
+/* Tab Container */
+.tab-container li {
+	float: left;
+}
+.tab-container li .active {
+	background: url('../img/active-shadow.jpg') no-repeat;
+	background-size: cover;
+	color: #FF4000;
+	font-weight: bold;
+	border-left: 1px #cfcfcf solid;
+	border-top: 1px #cfcfcf solid;
+	border-right: 1px #bcbcbc solid;
+	border-bottom: 1px #dedede solid;
+}
+.tab-container li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	color: #BABABA;
+	padding: 8px 11px 9px 11px;
+	display: inline-block;
+}
+/* List Container */
+.list-container {
+	overflow: hidden;
+	float: right;
+}
+.list-container li {
+	float: left;
+	padding: 7px 12px;
+}
+.list-container a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #666666;
+}
+.next-btn, .list-container .language, .list-container .cart, .list-container .myaccount {
+	background: url('../img/icons/sprite-icons.png') no-repeat;
+}
+.list-container .myaccount {
+	background-position: left -1px;
+	padding-left: 22px;
+}
+.list-container .cart {
+	background-position: left -16px;
+	padding-left: 22px;
+	padding-top: 3px;
+}
+.list-container .language {
+	background-position: right -36px;
+	padding-right: 22px;
+}
+/* Filter Box */
+.filters-container {
+	background: url('../img/filter-box-bg.jpg') center top no-repeat;
+	height: 488px;
+	width: 100%;
+	background-size: cover;
+	padding-top: 29px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 22;
+	margin-top: -5px;
+}
+.filters-container .container {
+	background-color: rgba(0,0,0,0.73);
+	padding: 76px 48px;
+	border-radius: 8px;
+	height: 400px;
+}
+.filter-category{
+	padding-bottom:20px;
+}
+.filter-category a {
+	padding: 46px 0 21px;
+	border-radius: 8px;
+	text-align: center;
+	color: #fff;
+	width: 114px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 15px;
+	box-sizing: border-box;
+}
+.filter-category .hotel, .filter-category .transporation, .filter-category .tour-package, .filter-category .efare {
+	background: url('../img/icons/icon-filters.png') no-repeat;
+}
+.filter-category .efare {
+	background-position: 43px 16px;
+	background-color: rgba(77,81,87,0.9);
+}
+.filter-category .tour-package {
+	background-position: 43px -50px;
+	background-color: rgba(77,81,87,0.9);
+}
+.filter-category .transporation {
+	background-position: 43px -116px;
+	background-color: rgba(77,81,87,0.9);
+}
+.filter-category .hotel {
+	background-position: 43px -177px;
+	background-color: rgba(77,81,87,0.9);
+}
+.filter-category a:hover {
+	background-color: #fff;
+	color: #FF3F00;
+	text-decoration: none;
+}
+.filter-category .efare:hover {
+	background-position: -76px 16px;
+}
+.filter-category .tour-package:hover {
+	background-position: -76px -50px;
+}
+.filter-category .transporation:hover {
+	background-position: -76px -116px;
+}
+.filter-category .hotel:hover {
+	background-position: -76px -177px;
+}
+.search-cta {
+	background-color: #ff4000;
+	color: #fff;
+	font-weight: bold;
+}
+/* #TOP ATTRACTIONS
+================================================== */
+.top-attactions {
+	text-align: center;
+	padding-top: 62px;
+}
+.top-attactions .container {
+	padding-top: 27px;
+}
+.top-attactions .list {
+	width: 319px;
+}
+.best-tour-packages .list {
+	width: 229px;
+}
+.list {
+	border: 1px #d0d0d0 solid;
+	border-radius: 7px;
+	overflow: hidden;
+	padding: 0;
+	background-color: #fff;
+}
+.list .image {
+	border-bottom: 6px #ff4000 solid;
+}
+.top-attactions .list .desc {
+	padding: 11px 27px 20px;
+}
+.best-tour-packages .list .desc {
+	padding: 10px 20px 20px;
+}
+.list .desc {
+	text-align: left;
+	position: relative;
+}
+.list .title {
+	font-weight: bold;
+	color: #525252;
+}
+.list .location {
+	font-size: 12px;
+	line-height: 15px;
+	padding-top: 7px;
+	color: #000;
+}
+.list .rating {
+	padding-top: 31px;
+}
+.list .star {
+	display: inline-block;
+}
+.list .review {
+	color: #ff3f00;
+	display: inline-block;
+	font-size: 13px;
+	padding-left: 7px;
+}
+.list .sale-price {
+	color: #FF3F00;
+	display: inline-block;
+}
+.list .price {
+	padding-top: 11px;
+}
+.best-tour-packages .list .price {
+	padding-top: 32px;
+}
+.list .old-price {
+	display: inline-block;
+	color: #aaa;
+	text-decoration: line-through;
+	padding-left: 10px;
+}
+.next-btn {
+	background-position: -4px -53px;
+	display: inline-block;
+	text-indent: 30px;
+	overflow: hidden;
+	width: 11px;
+	height: 22px;
+	position: absolute;
+	right: 22px;
+	bottom: 24px;
+}
+/* #TOUR PACKAGES
+================================================== */
+
+.best-tour-packages {
+	background: url('../img/top-pack-bg.jpg') center 0 no-repeat;
+	background-color: #efefef;
+	text-align: center;
+	margin-top: 40px;
+	padding: 36px 0 13px 0;
+}
+.best-tour-packages .container {
+	padding-top: 20px;
+}
+/* #FOOTER
+================================================== */
+footer {
+	background-color: #1a1a1a;
+	padding: 28px 0 40px;
+}
+.payment-title {
+	color: #ff3f00;
+	font-size: 19px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.footer-title {
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px #aaa solid;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: inline-block
+}
+.f-links {
+	padding-left: 63px;
+}
+.f-links a {
+	color: #999;
+	display: block;
+	font-size: 12px;
+	padding-bottom: 8px;
+	padding-top: 9px;
+}
+.payment-methods {
+	padding-bottom: 13px;
+}
+.p-link a {
+	font-size: 12px;
+	color: #999;
+	text-decoration: underline;
+}
+.social-icons {
+	padding-top: 20px;
+}
+.social-icons a {
+	padding-right: 8px;
+}
+.social-title {
+	border-top: 1px solid #aaa;
+	color: #fff;
+	margin-top: 47px;
+	padding-top: 16px;
+	text-transform: uppercase;
+}
+/* Trip Box*/ 
+.msp-trip-container {
+	background: url('../img/trip_bg.jpg') repeat-x;
+	height: 81px;
+	border-radius: 10px;
+	border: 1px #c5c5c5 solid;
+	position: absolute;
+	bottom: -36px;
+	width: 1009px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	left: 50%;
+	margin-left: -504px;
+}
+.msp-trip-container .title {
+	color: #FF3F00;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 30px;
+	line-height: 34px;
+	font-style: italic;
+	display: table-cell;
+	vertical-align: middle;
+}
+.msp-trip-container .col-sm-3 {
+	display: table;
+	height: 63px;
+	border-right: 1px #dadada solid;
+}
+/*.msp-trip-container .title {
+	
+	height: 60px;
+}*/
+.msp-trip-container .line-item {
+	display: table-cell;
+	vertical-align: middle;
+}
+.msp-trip-container .line-title {
+	color: #545454;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+.msp-trip-container .desc {
+	font-size: 12px;
+	line-height: 14px;
+}
