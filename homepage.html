@@ -13,6 +13,9 @@
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet">
 
+<!-- font-awesome -->
+<link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+
 <!-- Theme Stylesheet-->
 <link href="css/theme.css" rel="stylesheet">
 
@@ -32,11 +35,11 @@
   
   <!-- START NAV LEVEL:1 -->
   
-  <div class="container">
+  <div class="container-fluid">
     <div class="row"> 
       
       <!-- START TAB LIST -->
-      <div class="col-sm-5">
+      <div class="col-sm-5 col-xs-6">
         <ul class="tab-container">
           <li><a href="" class="active">PASSENGERS</a></li>
           <li><a href="">BUSINESSES & COMMUNITIES</a></li>
@@ -44,11 +47,22 @@
       </div>
       
       <!-- START LIST -->
-      <div class="col-sm-7">
-        <ul class="list-container">
+      <div class="col-sm-7 col-xs-6 list-container">
+        <ul>
           <li><a href="" class="myaccount">MYACCOUNT</a></li>
           <li><a href="" class="cart">MY CART</a></li>
-          <li><a href="" class="language">ENGLSH</a></li>
+          
+          <!-- START LANGUAGE -->
+          <li>
+            <div class="dropdown"> <a class="language" id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> ENGLSH </a>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="">English</a></li>
+                <li><a href="">Italian</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- END LANGUAGE -->
+          
         </ul>
       </div>
     </div>
@@ -58,29 +72,25 @@
   
   <!-- START NAV LEVEL:2 -->
   
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="logo"> <a href="" class="logo"><img src="img/logo.png" alt="" title=""></a> </div>
-        
-        <!-- START NAV -->
-        <button data-target=".nav-main-collapse" data-toggle="collapse" class="btn btn-responsive-nav btn-inverse"> <i class="icon icon-bars"></i> </button>
-        <div class="navbar-collapse nav-main-collapse collapse">
-          <nav class="nav-main mega-menu">
-            <ul id="mainMenu" class="nav nav-main">
-              <li> <a href="" class="active">ELECTRONIC TICKETS</a> </li>
-              <li> <a href="">LOCAL OFFERS</a> </li>
-              <li> <a href="">HOTEL</a> </li>
-              <li> <a href="">TRANSPORATION</a> </li>
-              <li> <a href="">CUSTOMER SERVICE</a> </li>
-            </ul>
-          </nav>
-        </div>
-        
-        <!-- END NAV --> 
-        
-      </div>
+  <div class="container-fluid navigations">
+    <div class="logo"> <a href="" class="logo"><img src="img/logo.png" alt="" title=""></a> </div>
+    
+    <!-- START NAV -->
+    <button data-target=".nav-main-collapse" data-toggle="collapse" class="btn btn-responsive-nav btn-inverse"> <i class="icon icon-bars"></i> </button>
+    <div class="navbar-collapse nav-main-collapse collapse">
+      <nav class="nav-main mega-menu">
+        <ul id="mainMenu" class="nav nav-main">
+          <li> <a href="" class="active">ELECTRONIC TICKETS</a> </li>
+          <li> <a href="">LOCAL OFFERS</a> </li>
+          <li> <a href="">HOTEL</a> </li>
+          <li> <a href="">TRANSPORATION</a> </li>
+          <li> <a href="">CUSTOMER SERVICE</a> </li>
+        </ul>
+      </nav>
     </div>
+    
+    <!-- END NAV --> 
+    
   </div>
   
   <!-- END NAV LEVEL:2 --> 
@@ -92,14 +102,72 @@
 <!-- START FILTERS BOX -->
 
 <div  class="filters-container">
-  <div class="container">
-    <div class="row"> 
-      
-      <!-- START CATEGORY -->
-      <div class="filter-category"> <a class="efare" href="">E - Fare</a> <a class="tour-package" href="">Tour Package</a> <a class="transporation" href="">Transporation</a> <a class="hotel" href="">Hotel</a> </div>
-      <!-- END CATEGORY -->
-      
-      <button class="btn search-cta">Search</button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="filters"> 
+        <!-- START CATEGORY -->
+        <div class="filter-category">
+          <div class="efare"><a href="">E - Fare</a> </div>
+          <div class="tour-package"><a href="">Tour Package</a></div>
+          <div class="transporation"><a href="">Transporation</a></div>
+          <div class="hotel"><a href="">Hotel</a></div>
+          <div class="efare-innter-content"> 
+            <!-- START CHILD EFARE -->
+            <div class="admission-tickets"> <a href="">Admission Tckets</a> </div>
+            <div class="joint-tickets"> <a href="">Joint Tickets</a> </div>
+            <div class="diy"> <a href="">DIY</a> </div>
+          </div>
+        </div>
+        <!-- END CATEGORY --> 
+        
+        <!-- START DESTINATION -->
+        
+        <div class="form-item-select">
+          <div class="destination form-item">
+            <label>Select a Destination</label>
+            <select>
+              <option>Canada</option>
+              <option>United States</option>
+            </select>
+          </div>
+          
+          <!-- START REGION -->
+          <div class="region form-item">
+            <label>Select a Region/City</label>
+            <select>
+              <option>Canada</option>
+              <option>United States</option>
+            </select>
+          </div>
+          
+          <!-- START ADMISSION -->
+          <div class="admission form-item">
+            <label>Select an Admission</label>
+            <select>
+              <option>Canada</option>
+              <option>United States</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item-date"> 
+          <!-- START DATE -->
+          <div class="entrance-date form-item">
+            <label>Entrance date</label>
+            <select>
+              <option>Canada</option>
+              <option>United States</option>
+            </select>
+          </div>
+          <div class="entrance-time form-item">
+            <label></label>
+            <select>
+              <option>Canada</option>
+              <option>United States</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn search-cta">Search</button>
+      </div>
       
       <!-- START WHY MSL TRIP? -->
       
@@ -157,8 +225,11 @@
 
 <div class="top-attactions">
   <h2>TOP <b>ATTRACTIONS</b></h2>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row"> 
+      
+      <!-- START SEE ALL LINK -->
+      <div class="see-all"> <a href="">SEE ALL</a> </div>
       
       <!-- START ITEM 1 -->
       <div class="col-sm-4">
@@ -230,7 +301,7 @@
 
 <div class="best-tour-packages">
   <h2>BEST 10 VACATION <b>TOUR PACKAGES</b></h2>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row"> 
       
       <!-- START ITEM 1 -->
@@ -306,7 +377,7 @@
 <!-- START FOOTER -->
 
 <footer>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <div class="payment-title">ACCEPTED PAYMENT METHODS</div>
@@ -323,15 +394,15 @@
       </div>
       <div class="col-sm-8 f-links">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-6">
             <div class="footer-title">Company</div>
             <div> <a href="">About Us</a> <a href="">Corporate Info</a> <a href="">Media Center</a> <a href="">Careers</a> <a href="">Site Map</a> <a href="">Free Newsletter</a> </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-6">
             <div class="footer-title">SUPPORT</div>
             <div> <a href="">Customer service</a> <a href="">Privacy Policy</a> <a href="">Low Price Guarantee</a> <a href="">Group Services</a> <a href="">Mileage Program</a> <a href="">Gift Certificates</a> </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-6">
             <div class="footer-title">SITES</div>
             <div> <a href="">Customer service</a> <a href="">Privacy Policy</a> <a href="">Low Price Guarantee</a> <a href="">Group Services</a> <a href="">Mileage Program</a> <a href="">Gift Certificates</a> </div>
           </div>
