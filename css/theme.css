@@ -24,9 +24,6 @@ body {
 .container-fluid {
 	max-width: 1009px;
 }
-header .container-fluid {
-	max-width: 1028px;
-}
 .btn-responsive-nav {
 	display: none;
 }
@@ -67,10 +64,18 @@ h2 {
 }
 /* #HEADER
 ================================================== */
+header .container-fluid {
+	max-width: 1028px;
+}
+.sticky {
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	z-index: 99;
+}
 header {
 	background: url('../img/header-nav-bg2.png') repeat-x;
 	height: 90px;
-	position: relative;
 	z-index: 999;
 }
 .business header {
@@ -79,6 +84,7 @@ header {
 }
 .logo {
 	position: absolute;
+	z-index: 999;
 }
 .logo-log {
 	padding: 9px 0 13px;
@@ -380,29 +386,29 @@ header {
 	color: #D80000;
 	font-weight: bold;
 }
-.details-batch .batch{
-	display:inline-block;
+.details-batch .batch {
+	display: inline-block;
 }
-.details-batch .batch a{
-	background:url('../img/search-icons.jpg') no-repeat;
+.details-batch .batch a {
+	background: url('../img/search-icons.jpg') no-repeat;
 	color: #202020;
-    display: block;
-    font-size: 11px;
-    padding-bottom: 9px;
-    padding-left: 40px;
-    padding-top: 3px;
+	display: block;
+	font-size: 11px;
+	padding-bottom: 9px;
+	padding-left: 40px;
+	padding-top: 3px;
 }
-.details-batch .day a{
-	background-position:1px -1px;
+.details-batch .day a {
+	background-position: 1px -1px;
 }
-.details-batch .meals a{
-	background-position:-98px -1px;
+.details-batch .meals a {
+	background-position: -98px -1px;
 }
-.details-batch .flights a{
-	background-position:-178px -1px;
+.details-batch .flights a {
+	background-position: -178px -1px;
 }
-.details-batch .transpotation a{
-	background-position:-274px -1px;
+.details-batch .transpotation a {
+	background-position: -274px -1px;
 }
 /* #TOP ATTRACTIONS
 ================================================== */
@@ -743,16 +749,16 @@ header {
 }
 .pagination .next-page {
 	background-position: 5px -18px;
-    display: inline-block;
-    overflow: hidden;
-    padding-bottom: 3px;
-    text-indent: 24px;
-    width: 10px;
+	display: inline-block;
+	overflow: hidden;
+	padding-bottom: 3px;
+	text-indent: 24px;
+	width: 10px;
 }
 .pagination a {
 	padding-right: 3px;
-	color:#888;
-	font-size:14px;
+	color: #888;
+	font-size: 14px;
 }
 .pagination .active {
 	color: #d90000;
@@ -760,6 +766,45 @@ header {
 }
 /* #FOOTER
 ================================================== */
+
+/* back to top */
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgba(255, 64, 0, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	-ms-transition: opacity .3s 0s, visibility 0s .3s;
+	-o-transition: opacity .3s 0s, visibility 0s .3s;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-ms-transition: opacity .3s 0s, visibility 0s 0s;
+	-o-transition: opacity .3s 0s, visibility 0s 0s;
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+.cd-top.cd-fade-out {
+	opacity: .5;
+}
+.no-touch .cd-top:hover {
+	background-color: #ff4000;
+	opacity: 1;
+}
 footer {
 	background-color: #1a1a1a;
 	padding: 28px 0 40px;
