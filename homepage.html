@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MSL</title>
+<title>MSL - PASSENGERS</title>
 
 <!-- Bootstrap Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body class="passengers">
 
 <!-- START HEADER -->
 
@@ -41,8 +41,8 @@
       <!-- START TAB LIST -->
       <div class="col-sm-5 col-xs-6">
         <ul class="tab-container">
-          <li><a href="" class="active">PASSENGERS</a></li>
-          <li><a href="">BUSINESSES & COMMUNITIES</a></li>
+          <li><a href="homepage.html" class="active">PASSENGERS</a></li>
+          <li><a href="business-communities.html">BUSINESSES & COMMUNITIES</a></li>
         </ul>
       </div>
       
@@ -98,6 +98,22 @@
 </header>
 
 <!-- END HEADER --> 
+
+<!-- START SOCIAL DRAWER -->
+<div id="contact-drawer" class="contact-drawer" data-testid="contactDrawerDiv">
+  <div id="smalldevicesChatIcon" class="smalldevices-chat-icon drawer-open-mobile"></div>
+  <div class="contact-drawer-tab">Share To Your Friends</div>
+  <div class="contact-drawer-content">
+    <div class="social-icons">
+      <div class="googleplus"><a href="" target="_blank">googleplus</a></div>
+      <div class="facebook"><a href="" target="_blank">facebook</a></div>
+      <div class="thumbs"><a href="" target="_blank">thumbs</a></div>
+      <div class="twitter"><a href="" target="_blank">twitter</a></div>
+      <div class="pinterest"><a href="" target="_blank">pinterest</a></div>
+    </div>
+  </div>
+</div>
+<!-- END SOCIAL DRAWER --> 
 
 <!-- START FILTERS BOX -->
 
@@ -309,13 +325,13 @@
         <div class="list">
           <div class="image"> <img src="img/packages/thumbs1.jpg" alt="" title="" > </div>
           <div  class="desc">
-            <h1 class="title">Empire State Building</h1>
-            <div class="location"> New York City, NewYork </div>
+            <h1 class="title">NEW YORK CITY</h1>
+            <div class="location"> 3 days 2 nights, form Beijing </div>
             <div class="price">
               <div class="sale-price"> $399 </div>
               <div class="old-price">$1150</div>
             </div>
-            <a href="" class="next-btn">Next</a> </div>
+          </div>
         </div>
       </div>
       <!-- END ITEM 1 --> 
@@ -325,13 +341,14 @@
         <div class="list">
           <div class="image"> <img src="img/packages/thumbs2.jpg" alt="" title="" > </div>
           <div  class="desc">
-            <h1 class="title">Empire State Building</h1>
-            <div class="location"> New York City, NewYork </div>
+            <h1 class="title">LAS VEGAS AND
+              WEST GRAND CANYON</h1>
+            <div class="location">5 days 4 nights, form Shanghai </div>
             <div class="price">
               <div class="sale-price"> $399 </div>
               <div class="old-price">$1150</div>
             </div>
-            <a href="" class="next-btn">Next</a> </div>
+          </div>
         </div>
       </div>
       <!-- END ITEM 2 --> 
@@ -341,13 +358,13 @@
         <div class="list">
           <div class="image"> <img src="img/packages/thumbs3.jpg" alt="" title="" > </div>
           <div  class="desc">
-            <h1 class="title">Empire State Building</h1>
-            <div class="location"> New York City, NewYork </div>
+            <h1 class="title">NEW YORK CITY</h1>
+            <div class="location">3 days 2 nights, form Beijing</div>
             <div class="price">
               <div class="sale-price"> $399 </div>
               <div class="old-price">$1150</div>
             </div>
-            <a href="" class="next-btn">Next</a> </div>
+          </div>
         </div>
       </div>
       <!-- END ITEM 3 --> 
@@ -357,13 +374,13 @@
         <div class="list">
           <div class="image"> <img src="img/packages/thumbs4.jpg" alt="" title="" > </div>
           <div  class="desc">
-            <h1 class="title">Empire State Building</h1>
-            <div class="location"> New York City, NewYork </div>
+            <h1 class="title">NEW YORK CITY</h1>
+            <div class="location">3 days 2 nights, form Beijing</div>
             <div class="price">
               <div class="sale-price"> $399 </div>
               <div class="old-price">$1150</div>
             </div>
-            <a href="" class="next-btn">Next</a> </div>
+          </div>
         </div>
       </div>
       <!-- END ITEM 4 --> 
@@ -416,6 +433,9 @@
 
 <!-- JS Libs included below --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/modernizr.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
