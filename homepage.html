@@ -120,66 +120,259 @@
 <div  class="filters-container">
   <div class="container-fluid">
     <div class="row">
-      <div class="filters"> 
-        <!-- START CATEGORY -->
-        <div class="filter-category">
-          <div class="efare"><a href="">E - Fare</a> </div>
-          <div class="tour-package"><a href="">Tour Package</a></div>
-          <div class="transporation"><a href="">Transporation</a></div>
-          <div class="hotel"><a href="">Hotel</a></div>
-          <div class="efare-innter-content"> 
-            <!-- START CHILD EFARE -->
-            <div class="admission-tickets"> <a href="">Admission Tckets</a> </div>
-            <div class="joint-tickets"> <a href="">Joint Tickets</a> </div>
-            <div class="diy"> <a href="">DIY</a> </div>
-          </div>
-        </div>
-        <!-- END CATEGORY --> 
-        
-        <!-- START DESTINATION -->
-        
-        <div class="form-item-select">
-          <div class="destination form-item">
-            <label>Select a Destination</label>
-            <select>
-              <option>Canada</option>
-              <option>United States</option>
-            </select>
-          </div>
+      <div class="filters">
+        <div class="filter-category"> 
           
-          <!-- START REGION -->
-          <div class="region form-item">
-            <label>Select a Region/City</label>
-            <select>
-              <option>Canada</option>
-              <option>United States</option>
-            </select>
-          </div>
+          <!-- START CATEGORY -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <div class="efare"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">E - Fare</a> </div>
+            </li>
+            <li role="presentation">
+              <div class="tour-package"><a href="#tour-package" aria-controls="tour-package" role="tab" data-toggle="tab">Tour Package</a></div>
+            </li>
+            <li role="presentation">
+              <div class="transporation"><a href="#transporation" aria-controls="transporation" role="tab" data-toggle="tab">Transporation</a></div>
+            </li>
+            <li role="presentation">
+              <div class="hotel"><a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Hotel</a></div>
+            </li>
+          </ul>
           
-          <!-- START ADMISSION -->
-          <div class="admission form-item">
-            <label>Select an Admission</label>
-            <select>
-              <option>Canada</option>
-              <option>United States</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-item-date"> 
-          <!-- START DATE -->
-          <div class="entrance-date form-item">
-            <label>Entrance date</label>
-            <select>
-              <option>Canada</option>
-              <option>United States</option>
-            </select>
-          </div>
-          <div class="entrance-time form-item">
-            <label></label>
-            <select>
-              <option>Canada</option>
-              <option>United States</option>
-            </select>
+          <!-- END CATEGORY --> 
+          
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home"> 
+              
+              <!-- START FILTER CONTENT : EFARE -->
+              
+              <div class="efare-innter-content">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation">
+                    <div class="admission-tickets"> <a href="#atickets" aria-controls="atickets" role="tab" data-toggle="tab">Admission Tckets</a> </div>
+                  </li>
+                  <li role="presentation">
+                    <div class="joint-tickets"> <a href="#jtickets" aria-controls="jtickets" role="tab" data-toggle="tab">Joint Tickets</a> </div>
+                  </li>
+                  <li role="presentation">
+                    <div class="diy"> <a href="#diy-tickets" aria-controls="diy-tickets" role="tab" data-toggle="tab">DIY</a> </div>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane" id="atickets"> 
+                    
+                    <!-- START FILTER CINTENT: ADMISISON TICKETS -->
+                    
+                    <div class="form-item-select">
+                      <div class="destination form-item">
+                        <label>Select a Destination</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                      
+                      <!-- START REGION -->
+                      <div class="region form-item">
+                        <label>Select a Region/City</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                      
+                      <!-- START ADMISSION -->
+                      <div class="admission form-item">
+                        <label>Select an Admission</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-item-date"> 
+                      <!-- START DATE -->
+                      <div class="entrance-date form-item">
+                        <label>Entrance date</label>
+                        <select>
+                          <option>Date</option>
+                        </select>
+                      </div>
+                      <div class="entrance-time form-item">
+                        <label></label>
+                        <select>
+                          <option>Time</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <!-- END FILTER CINTENT: ADMISISON TICKETS --> 
+                    
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="jtickets"> 
+                    
+                    <!-- START FILTER CINTENT: JOINT TICKETS -->
+                    
+                    <div class="form-item-select">
+                      <div class="destination form-item">
+                        <label>Select a Destination</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                      
+                      <!-- START REGION -->
+                      <div class="region form-item">
+                        <label>Select a Region/City</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-item-date"> 
+                      <!-- START DATE -->
+                      <div class="entrance-date form-item">
+                        <label>Entrance date</label>
+                        <select>
+                          <option>Date</option>
+                        </select>
+                      </div>
+                      <div class="entrance-time form-item">
+                        <label></label>
+                        <select>
+                          <option>Time</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <!-- END FILTER CINTENT: JOINT TICKETS --> 
+                    
+                  </div>
+                  
+                  <!-- START FILTER CINTENT: DIY  -->
+                  
+                  <div role="tabpanel" class="tab-pane" id="diy-tickets">
+                    <div class="form-item-select">
+                      <div class="destination form-item">
+                        <label>Select a Destination</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                      
+                      <!-- START REGION -->
+                      <div class="region form-item">
+                        <label>Select a Region/City</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                      
+                      <!-- START ADMISSION -->
+                      <div class="admission form-item">
+                        <label>Select an Admission</label>
+                        <select>
+                          <option>Canada</option>
+                          <option>United States</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-item-date"> 
+                      <!-- START DATE -->
+                      <div class="entrance-date form-item">
+                        <label>Entrance date</label>
+                        <select>
+                          <option>Date</option>
+                        </select>
+                      </div>
+                      <div class="entrance-time form-item">
+                        <label></label>
+                        <select>
+                          <option>Time</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- END FILTER CINTENT: DIY  --> 
+                </div>
+              </div>
+              
+              <!-- END FILTER CONTENT : EFARE --> 
+              
+            </div>
+            
+            <!-- START FILTER CONTENT : TOUR PACKAGE -->
+            
+            <div role="tabpanel" class="tab-pane" id="tour-package"> 
+              <!-- START DESTINATION -->
+              
+              <div class="form-item-select">
+                <div class="destination form-item">
+                  <label>Place of Departure</label>
+                  <select>
+                    <option>Canada</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+                
+                <!-- START REGION -->
+                <div class="region form-item">
+                  <label>Destination</label>
+                  <select>
+                    <option>Canada</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item-date"> 
+                <!-- START DATE -->
+                <div class="entrance-date form-item">
+                  <label>Departure  Date</label>
+                  <select>
+                    <option>Date</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+                <div class="entrance-time form-item">
+                  <label></label>
+                  <select>
+                    <option>Time</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+                <div class="entrance-day form-item">
+                  <label></label>
+                  <select>
+                    <option>Days</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+                <div class="entrance-night form-item">
+                  <label></label>
+                  <select>
+                    <option>Nights</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- END FILTER CONTENT : TOUR PACKAGE --> 
+            
+            <!-- START FILTER CONTENT : TRANSPOTATION -->
+            <div role="tabpanel" class="tab-pane" id="transporation"> Filter options  for Transportation - Comming Soon </div>
+            <!-- END FILTER CONTENT : TRANSPOTATION --> 
+            
+            <!-- START FILTER CONTENT : HOTEL -->
+            <div role="tabpanel" class="tab-pane" id="hotel"> Filter options for Hotel - Comming Soon</div>
+            <!-- END FILTER CONTENT : HOTEL --> 
+            
           </div>
         </div>
         <button class="btn search-cta">Search</button>
@@ -439,8 +632,7 @@
 <!-- JS Libs included below --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
-<script src="js/modernizr.js"></script>
+<script src="js/modernizr.js"></script> 
 <script src="js/custom.js"></script>
-
 </body>
 </html>

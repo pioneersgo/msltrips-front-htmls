@@ -6,11 +6,15 @@
 ==================================================
 	#Document Setup
 	#Typology
-	#Filter Box
 	#HEADER
+	#Filter Box
 	#TOP ATTRACTIONS
 	#TOUR PACKAGES
+	#GALLERY
+	#Specifications
+	#Timeline
 	#FOOTER
+	#MEDIA QURIES
 
 
 /* #Document Setup
@@ -31,7 +35,7 @@ body {
 	background-color: #f7f7f7;
 }
 /* font-size 11px */
-.msp-trip-container .desc, .list-container a {
+.review .date, .msp-trip-container .desc, .list-container a {
 	font-size: 11px;
 }
 /* font-size 12px */
@@ -138,7 +142,7 @@ header {
 	border-right: 1px #bcbcbc solid;
 	border-bottom: 1px #dedede solid;
 }
-.passengers .tab-container li .active {
+.tab-container li .active {
 	color: #FF4000;
 }
 .business .tab-container li .active {
@@ -176,7 +180,7 @@ header {
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
 	width: 100%;
 }
-.next-btn, .list-container .language, .list-container .cart, .list-container .myaccount {
+.jssora02l, .jssora02r, .next-btn, .list-container .language, .list-container .cart, .list-container .myaccount {
 	background: url('../img/icons/sprite-icons.png') no-repeat;
 }
 .list-container .myaccount {
@@ -228,7 +232,16 @@ header {
 	padding: 20px 20px 20px 62px;
 	box-sizing: border-box;
 }
-.filter-category {
+.filter-category .nav > li {
+	border: 0;
+	padding-right: 0;
+}
+.filter-category .nav-tabs {
+	border: 0;
+	padding-bottom: 20px;
+}
+.filter-category .tab-pane {
+	color: #fff;
 	padding-bottom: 15px;
 }
 select {
@@ -273,7 +286,6 @@ select {
 }
 .form-item-date {
 	overflow: hidden;
-	padding-bottom: 23px;
 }
 .form-item-date .form-item, .filters .form-item {
 	margin-right: 9px;
@@ -307,7 +319,6 @@ select {
 }
 .efare-innter-content {
 	overflow: hidden;
-	padding-top: 20px;
 }
 .efare-innter-content a {
 	margin-right: 0;
@@ -330,22 +341,31 @@ select {
 .filter-category .hotel > a {
 	background-position: 43px -184px;
 }
-.filter-category a:hover {
+.filter-category a:focus, .filter-category a:hover {
 	background-color: #fff;
 	color: #FF3F00;
 	text-decoration: none;
+	outline: none;
 }
-.filter-category .efare > a:hover {
+.filter-category .active .efare > a, .filter-category .efare > a:hover {
 	background-position: -111px 12px;
+	background-color: #fff;
+	color: #FF3F00;
 }
-.filter-category .tour-package > a:hover {
+.filter-category .active .tour-package > a, .filter-category .tour-package > a:hover {
 	background-position: -111px -56px;
+	background-color: #fff;
+	color: #FF3F00;
 }
-.filter-category .transporation > a:hover {
+.filter-category .active .transporation > a, .filter-category .transporation > a:hover {
 	background-position: -111px -123px;
+	background-color: #fff;
+	color: #FF3F00;
 }
-.filter-category .hotel > a:hover {
+.filter-category .active .hotel > a, .filter-category .hotel > a:hover {
 	background-position: -111px -184px;
+	background-color: #fff;
+	color: #FF3F00;
 }
 .efare-innter-content .admission-tickets a {
 	border-top-left-radius: 8px;
@@ -366,14 +386,20 @@ select {
 	padding: 15px 26px 15px 46px;
 	width: auto;
 }
-.efare-innter-content .admission-tickets a:hover {
+.efare-innter-content .active .admission-tickets a, .efare-innter-content .admission-tickets a:hover {
 	background-position: -251px -35px;
+	background-color: #fff;
+	color: #FF3F00;
 }
-.efare-innter-content .joint-tickets a:hover {
+.efare-innter-content .active .joint-tickets a, .efare-innter-content .joint-tickets a:hover {
 	background-position: -258px -142px;
+	background-color: #fff;
+	color: #FF3F00;
 }
-.efare-innter-content .diy a:hover {
+.efare-innter-content .active .diy a, .efare-innter-content .diy a:hover {
 	background-position: -254px -247px;
+	background-color: #fff;
+	color: #FF3F00;
 }
 .search-cta {
 	background-color: #ff4000;
@@ -763,33 +789,108 @@ select {
 .business .contact-drawer .contact-drawer-tab {
 	background-color: #d90000;
 }
-/* pagination */
-
-.pagination {
-	float: right;
-	margin: 0;
-	padding-bottom: 20px;
-	padding-right: 20px;
-}
-.pagination .next-page {
-	background-position: 5px -18px;
-	display: inline-block;
-	overflow: hidden;
-	padding-bottom: 3px;
-	text-indent: 24px;
-	width: 10px;
-}
-.pagination a {
-	padding-right: 3px;
-	color: #888;
-	font-size: 14px;
-}
-.pagination .active {
-	color: #d90000;
-	font-weight: bold;
-}
 /* #GALLERY
 ================================================== */
+.captionOrange, .captionBlack {
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.captionOrange {
+	background: #EB5100;
+	background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack {
+	font-size: 16px;
+	background: #000;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover {
+	color: #eb5100;
+	text-decoration: underline;
+	background-color: #eeeeee;
+	background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon {
+	background: url(../img/browser-icons.png);
+}
+.jssora02l, .jssora02r {
+	cursor: pointer;
+	display: block;
+	height: 55px;
+	overflow: hidden;
+	position: absolute;
+	top: 239px !important;
+	width: 55px;
+	z-index: 999;
+}
+.jssora02l:focus, .jssora02l:hover, .jssora02l {
+	background-position: -1px -198px;
+}
+.jssora02r:focus, .jssora02r:hover, .jssora02r {
+	background-position: 30px -146px;
+}
+.jssort03 {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 600px;
+	height: 88px;
+	bottom: 0;
+}
+.jssort03 .p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 124px;
+	height: 60px;
+}
+.jssort03 .t {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.jssort03 .w, .jssort03 .pav:hover .w {
+	position: absolute;
+	width: 114px;
+	height: 60px;
+	box-sizing: content-box;
+}
+.jssort03 .pdn .w, .jssort03 .pav .w {
+	border-style: solid;
+}
+.jssort03 .c {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 124px;
+	height: 60px;
+}
+.jssort03 .p:hover .c, .jssort03 .pav .c {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.jssort03 .pav img {
+	border: 1px #fff solid;
+}
+.jssort03 .p:hover .c {
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+* html .jssort03 .w {
+	width /**/: 62px;
+	height /**/: 32px;
+}
 .palce-gallery-container {
 	padding-top: 25px;
 }
@@ -867,19 +968,28 @@ select {
 	width: 689px;
 	border-top-left-radius: 5px;
 }
-.large-thumbs img {
-	border-bottom-left-radius: 5px;
+.play-pause {
+	display: inline-block;
 }
-.thumbs-overlay {
-	background-color: rgba(0, 0, 0, 0.73);
-	bottom: 0;
-	padding: 20px;
-	position: absolute;
-	width: 689px;
-	border-bottom-left-radius: 5px;
-	box-sizing: border-box;
+.play-pause a {
+	background: url('../img/icons/pause.png') 0 0 no-repeat;
+	display: block;
+	text-indent: 9px;
+	width: 7px;
+	height: 10px;
+	overflow: hidden;
 }
-/* specifications */
+.current-slide {
+	color: #fff;
+	display: inline-block;
+	margin-left: 20px;
+}
+.top-controls {
+	float: right;
+	padding: 4px 10px;
+}
+/* #Specifications
+================================================== */
 
 .tab-specifications-container {
 	margin-top: 21px;
@@ -897,9 +1007,6 @@ select {
 	overflow: hidden;
 	border-bottom: 1px #b0b0b0 solid;
 }
-/*.specifications .tab-menu .active {
-	color: #85B200;
-}*/
 .specifications .tab-menu li:first-child {
 	border: 0;
 }
@@ -920,6 +1027,7 @@ select {
 	margin-top: 18px;
 	border-bottom: 1px #ebeae7 solid;
 	margin-bottom: 30px;
+	width: 100%;
 }
 .book-now-container table th {
 	background-color: #eeeeee;
@@ -937,9 +1045,12 @@ select {
 .add-cart {
 	border-radius: 5px;
 	color: #777777;
+	display: block;
 	font-size: 12px;
-	line-height: 16px;
 	font-weight: normal;
+	line-height: 16px;
+	min-width: 87px;
+	text-align: center;
 }
 .total-price {
 	text-align: right;
@@ -970,9 +1081,31 @@ select {
 	border-top: 1px #b0b0b0 solid;
 	padding-top: 33px;
 	margin-top: 35px;
+	overflow: hidden;
 }
 .description-container .content {
 	padding: 0 24px;
+	overflow: hidden;
+}
+.review .date, .review .star {
+	display: inline-block
+}
+.review .book-now-cta {
+	float: right;
+}
+.review .item {
+	border-top: 1px #ebeae7 solid;
+	padding-top: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.review-msg {
+	border: 1px solid #adadad;
+	border-radius: 10px;
+	height: 43px;
+	padding: 13px 0 0 12px;
+	width: 100%;
+	margin-bottom: 20px;
 }
 .description-container .content ul {
 	list-style: disc;
@@ -984,11 +1117,7 @@ select {
 	padding-bottom: 5px;
 }
 .description-container .review .image img {
-	border: 1px #b0b0b0 solid;
-}
-.description-container .review .image {
-	float: left;
-	padding-right: 10px;
+	border: 2px #b0b0b0 solid;
 }
 .round {
 	border-top-left-radius: 7px;
@@ -996,10 +1125,9 @@ select {
 }
 .sidebar-recommended-items .headline {
 	background-color: #eeeeee;
-	border-bottom: 1px #b0b0b0 solid;
-	border-top: 1px #b0b0b0 solid;
-	text-align: center;
-	padding: 11px 0;
+	border-bottom: 1px solid #b0b0b0;
+	border-top: 1px solid #b0b0b0;
+	padding: 11px 0 11px 15px;
 }
 .sidebar-recommended-items {
 	border-left: 1px #b0b0b0 solid;
@@ -1024,10 +1152,85 @@ select {
 	border: 1px #cfcfcf solid;
 	border-radius: 5px;
 }
+/* pagination */
+
+.pagination {
+	float: right;
+	margin: 0;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+.pagination .next-page {
+	background-position: 5px -18px;
+	display: inline-block;
+	overflow: hidden;
+	padding-bottom: 3px;
+	text-indent: 24px;
+	width: 10px;
+}
+.pagination a {
+	padding-right: 3px;
+	color: #888;
+	font-size: 14px;
+}
+.pagination .active {
+	color: #d90000;
+	font-weight: bold;
+}
+/* #Timeline
+================================================== */
+.timeline .day-timeline, .timeline .image {
+	float: left;
+}
+.timeline {
+	border-right: 1px solid #b0b0b0;
+	width: 367px;
+	padding-left: 0;
+}
+.timeline-desc {
+	padding-left: 27px;
+	width: 295px;
+}
+.timeline .day-timeline li {
+	position: relative;
+	list-style: none;
+	padding-bottom: 37px;
+	padding-left: 15px;
+}
+.timeline .day-timeline label {
+	color: #FF4000;
+	display: block;
+}
+.timeline .day-timeline .day {
+	font-size: 12px;
+}
+.timeline .day-timeline .day-num {
+	font-size: 20px;
+	font-weight: bold;
+}
+.timeline .item {
+	overflow: hidden;
+	padding-bottom: 20px;
+	position: relative;
+	width: 374px;
+}
+.timeline .day-timeline {
+	bottom: 19px;
+	position: absolute;
+	right: 27px;
+}
+.timeline .day-timeline li .inticator {
+	background: url('../img/timeline-indic.jpg') no-repeat;
+	display: block;
+	height: 8px;
+	position: absolute;
+	right: -23px;
+	top: 2px;
+	width: 8px;
+}
 /* #FOOTER
 ================================================== */
 
-/* back to top */
 .cd-top {
 	display: inline-block;
 	height: 40px;
@@ -1142,10 +1345,6 @@ footer {
 	height: 63px;
 	border-right: 1px #dadada solid;
 }
-/*.msp-trip-container .title {
-	
-	height: 60px;
-}*/
 .msp-trip-container .line-item {
 	display: table-cell;
 	vertical-align: middle;
@@ -1159,6 +1358,9 @@ footer {
 .msp-trip-container .desc {
 	line-height: 15px;
 }
+
+/* #MEDIA QURIES
+================================================== */
 @media (max-width:1020px) {
 .nav > li > a {
 	padding: 10px 18px;
