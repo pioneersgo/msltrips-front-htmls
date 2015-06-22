@@ -1,3 +1,39 @@
+	/* --------------------------------------------------------------------- */
+/* 6. Superfish Menu
+/* --------------------------------------------------------------------- */
+/*Superfish DropDown */
+(function($){ //create closure so we can safely use $ as alias for jQuery
+
+$(document).ready(function(){
+
+	var exampleOptions = {
+		delay:       450,                            // one second delay on mouseout
+		animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
+		speed:       'fast',                          // faster animation speed
+		autoArrows:  false                            // disable generation of arrow mark-up
+	}
+	// initialise plugin
+	var example = $('#mainMenu').superfish(exampleOptions);
+	
+	// buttons to demonstrate Superfish's public methods
+	$('.destroy').on('click', function(){
+	  example.superfish('destroy');
+	});
+	
+	$('.init').on('click', function(){
+	  example.superfish(exampleOptions);
+	});
+	
+	$('.open').on('click', function(){
+	  example.children('li:first').superfish('show');
+	});
+	
+	$('.close').on('click', function(){
+	  example.children('li:first').superfish('hide');
+	});
+	});
+
+})(jQuery);
 $(document).ready(function(e) {
     /* --------------------------------------------------------------------- */
 	/* 1. Heightest Desc Wrap
@@ -96,6 +132,8 @@ $(document).ready(function(e) {
 	});
 	
 	
+
+	
 	
 	/* --------------------------------------------------------------------- */
 	/* 5. Gallery Setup
@@ -156,6 +194,7 @@ $(document).ready(function(e) {
 	$(window).bind("load", ScaleSlider);
 	$(window).bind("resize", ScaleSlider);
 	$(window).bind("orientationchange", ScaleSlider);
-	//responsive code end
 	
 });
+
+

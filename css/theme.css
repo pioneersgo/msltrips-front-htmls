@@ -115,7 +115,6 @@ header {
 }
 .nav-main {
 	padding-left: 87px;
-	padding-top: 4px;
 }
 .nav > li {
 	display: inline-block;
@@ -125,7 +124,7 @@ header {
 .nav > li > a {
 	line-height: 16px;
 	color: #333333;
-	padding: 10px 24px;
+	padding: 17px 24px;
 }
 .nav > li > a:hover {
 	background-color: transparent;
@@ -569,11 +568,38 @@ select option {
 	padding-right: 24px;
 }
 .nav > li > a {
-	background-position: right -40px;
+	background-position: right -41px;
 }
 .nav > li > .active, .nav > li > a:hover {
-	background-position: right -68px;
+	background-position: right -81px;
 	color: #FF4000;
+}
+/* Drop Down Menu */
+.sf-js-enabled .dropdown-menu {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: -5px;
+	top: 47px;
+	background-color: #f8f8f8;
+	padding: 0;
+	border-left: 1px #c2c2c2 solid;
+	border-right: 1px #c2c2c2 solid;
+	border-bottom: 1px #c2c2c2 solid;
+}
+.sf-js-enabled .dropdown-menu > li {
+	padding: 0;
+	margin: 0;
+}
+.sf-js-enabled .dropdown-menu > li > a {
+	padding: 10px 8px 10px 21px;
+	border-top: 1px #ebeae7 solid;
+	color: #FF3F00;
+}
+.sf-js-enabled .dropdown-menu > li > a:hover {
+	background-color: #fff;
+	color: #FF3F00;
 }
 .pagination .next-page, .search-tab .see-all a, .see-all a {
 	background-position: right 1px;
