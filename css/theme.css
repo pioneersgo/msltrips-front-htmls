@@ -52,6 +52,12 @@ p {
 }
 /* #Typology
 ================================================== */
+
+@font-face {
+	font-family: 'HelveticaNeueLTPro-Lt';
+	src: url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff2') format('woff2'), /* Super Modern Browsers */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff') format('woff'), /* Pretty Modern Browsers */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.ttf') format('truetype'), /* Safari, Android, iOS */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 h1 {
 	font-size: 16px;
 	color: #525252;
@@ -172,7 +178,7 @@ header {
 	float: right;
 	padding-top: 8px;
 }
-.list-container li:first-child {
+.list-container li .dropdown-menu li, .list-container li:first-child {
 	border-left: 0;
 	background: none;
 }
@@ -948,6 +954,7 @@ a.captionOrange:hover {
 	padding: 0;
 }
 .place-title {
+	font-family: 'HelveticaNeueLTPro-Lt';
 	border-bottom: 1px solid #ebeae7;
 	font-size: 24px;
 	line-height: 29px;
@@ -1078,8 +1085,11 @@ a.captionOrange:hover {
 }
 .book-now-container table th {
 	background-color: #eeeeee;
-	padding: 14px 24px;
-	font-size: 13px;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 13px 16px;
+	color: #525252;
+	font-weight: bold;
 }
 .book-now-container table td {
 	font-size: 12px;
@@ -1096,7 +1106,7 @@ a.captionOrange:hover {
 	font-size: 12px;
 	font-weight: normal;
 	line-height: 16px;
-	min-width: 87px;
+	min-width: 81px;
 	text-align: center;
 }
 .total-price {
@@ -1231,6 +1241,7 @@ a.captionOrange:hover {
 	border-right: 1px solid #b0b0b0;
 	width: 367px;
 	padding-left: 0;
+	box-sizing: border-box;
 }
 .timeline-desc {
 	padding-left: 27px;
@@ -1294,6 +1305,7 @@ a.captionOrange:hover {
 	width: 223px;
 	position: absolute;
 	bottom: 0;
+	box-sizing: border-box;
 }
 .efare-box .title, .recharge-tickets-container .title {
 	padding-bottom: 20px;
