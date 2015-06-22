@@ -56,7 +56,7 @@ p {
 @font-face {
 	font-family: 'HelveticaNeueLTPro-Lt';
 	src: url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff2') format('woff2'), /* Super Modern Browsers */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff') format('woff'), /* Pretty Modern Browsers */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.ttf') format('truetype'), /* Safari, Android, iOS */  url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/helveticaneue/HelveticaNeueLTPro-Lt.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 h1 {
 	font-size: 16px;
@@ -65,6 +65,7 @@ h1 {
 	margin: 0 0 8px;
 }
 h2 {
+	font-family: 'HelveticaNeueLTPro-Lt';
 	font-size: 24px;
 	margin: 0 0 20px;
 }
