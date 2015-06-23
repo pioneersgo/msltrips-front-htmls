@@ -550,6 +550,11 @@ select option {
 	text-decoration: line-through;
 	padding-left: 10px;
 }
+.price label {
+	display: inline-block;
+	color: #aaa;
+	padding-right: 10px;
+}
 .next-btn {
 	background-position: -4px -53px;
 	display: inline-block;
@@ -738,6 +743,32 @@ select option {
 	margin-bottom: 21px;
 	overflow: hidden;
 	padding-bottom: 21px;
+}
+.efare-results-container .search-item .image {
+	width: 348px;
+}
+/* Slider */
+.slick-dots {
+	position: absolute;
+	bottom: 7px;
+}
+.slick-slider {
+	position: relative;
+}
+.slick-dots .slick-active button {
+	background-position: -25px 0;
+}
+.slick-dots .slick-active button, .slick-dots li button {
+	background: url('../img/slider-dots.png') no-repeat;
+	width: 17px;
+	height: 17px;
+}
+.slick-dots li button {
+	background-position: -25px 0;
+}
+.efare-results-container .search-item .image img {
+	border: 1px #d3d3d3 solid;
+	border-radius: 10px;
 }
 .search-item .content {
 	padding-top: 10px;
@@ -1298,21 +1329,58 @@ a.captionOrange:hover {
 	z-index: 22;
 	margin-top: -5px;
 }
-.recharge-tickets-container {
+.efare-results-container {
+	padding-top: 24px;
+}
+.efare-container .recharge-tickets-container {
+	position: absolute;
+	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.73);
+}
+.efare-results-container .recharge-tickets-container {
+	background-color: #efefef;
+	border-radius: 7px;
+}
+.recharge-tickets-container {
 	padding: 18px 15px 15px 23px;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 	width: 223px;
-	position: absolute;
-	bottom: 0;
 	box-sizing: border-box;
+}
+
+/* Refine Ressults */
+.refine-results-container {
+    border-bottom: 1px solid #b0b0b0;
+    border-left: 1px solid #b0b0b0;
+    border-radius: 7px;
+    border-right: 1px solid #b0b0b0;
+    box-sizing: border-box;
+    width: 222px;
+	margin-top:30px;
+}
+.refine-results-container .headline {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #b0b0b0;
+    border-top: 1px solid #b0b0b0;
+    padding: 11px 0 11px 15px;
 }
 .efare-box .title, .recharge-tickets-container .title {
 	padding-bottom: 20px;
 }
 .recharge-tickets-container select {
 	width: 183px;
+}
+.efare-results-container .efare-box {
+	background-color: #efefef;
+	margin-bottom: 30px;
+	margin-top: 0;
+	padding: 19px 16px 6px;
+}
+.efare-results-container .efare-box .sortby-container {
+	border-top: 1px solid #dddddd;
+	margin-top: 12px;
+	padding-top: 15px;
 }
 .efare-box {
 	margin-top: 20px;

@@ -132,11 +132,25 @@ $(document).ready(function(e) {
 	});
 	
 	
+	/* --------------------------------------------------------------------- */
+	/* 5. Stricy Menu
+	/* --------------------------------------------------------------------- */
+	
+	$(".search-item .image").slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  centerMode: true,
+	  variableWidth: true
+	});
+	
+	
 
 	
 	
 	/* --------------------------------------------------------------------- */
-	/* 5. Gallery Setup
+	/* 6. Gallery Setup
 	/* --------------------------------------------------------------------- */
 	var options = {
 	$AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
