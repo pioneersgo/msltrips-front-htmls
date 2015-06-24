@@ -136,21 +136,48 @@ $(document).ready(function(e) {
 	/* 5. Stricy Menu
 	/* --------------------------------------------------------------------- */
 	
-	$(".search-item .image").slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1,
-	  centerMode: true,
-	  variableWidth: true
-	});
+	var slickActive = $(".efare-results-container .search-item .image").length;
+
 	
+	if(slickActive>0){
+		$(".efare-results-container .search-item .image").slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  centerMode: true,
+		  variableWidth: true
+		});
+	}
+	
+	
+	
+	/* --------------------------------------------------------------------- */
+	/* 6. Stricy Menu
+	/* --------------------------------------------------------------------- */
+	
+	var sliderActive = $('.slider-bar').length;
+	
+	if(sliderActive>0){
+		$('.slider-bar').slider({
+			min:50,
+			min:250,
+			step:50,
+		});
+	}
+	
+	var datePickerActive = $('#datepicker').length;
+ 	
+	if(datePickerActive>0){
+    	$( "#datepicker" ).datepicker();
+	}
+  
 	
 
 	
 	
 	/* --------------------------------------------------------------------- */
-	/* 6. Gallery Setup
+	/* 7. Gallery Setup
 	/* --------------------------------------------------------------------- */
 	var options = {
 	$AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
