@@ -52,6 +52,38 @@ p {
 	color: #525252;
 	line-height: 19px;
 }
+/* Border radius 10px; */
+.review-msg, .msp-trip-container, .efare-results-container .search-item .image img, .efare-results-container .search-item .slick-slide, .msp-trip-container {
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+/* Border radius 8px; */
+.hotel a, .transporation a, .tour-package a, .efare a, .filters-container .container-fluid {
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+/* Border radius 7px; */
+.sidebar-recommended-items, .efare-results-container .recharge-tickets-container, .refine-results-container, .list {
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+/* Border radius 5px; */
+.recommended-item .image img, .datepicker, .book-now-cta, .specifications, .add-cart, .palce-gallery-container .container-fluid, .filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select, .search-packages .search-container {
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
 /* #Typology
 ================================================== */
 
@@ -254,11 +286,6 @@ header {
 }
 .filters-container .container-fluid {
 	background-color: rgba(0,0,0,0.73);
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
 	height: 400px;
 	padding: 20px 20px 20px 62px;
 	box-sizing: border-box;
@@ -296,7 +323,7 @@ select option {
 .form-item-date {
 	overflow: hidden;
 }
-.form-item-date .form-item, .filters .form-item {
+.filter-category .form-item {
 	margin-right: 9px;
 }
 .form-item-date label, .form-item-select label {
@@ -322,13 +349,6 @@ select option {
 }
 .hotel, .transporation, .tour-package, .efare {
 	display: inline-block;
-}
-.hotel a, .transporation a, .tour-package a, .efare a {
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
 }
 .efare-innter-content {
 	overflow: hidden;
@@ -497,11 +517,6 @@ select option {
 }
 .list {
 	border: 1px #d0d0d0 solid;
-	-ms-border-radius: 7px;
-	-o-border-radius: 7px;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	border-radius: 7px;
 	overflow: hidden;
 	padding: 0;
 	background-color: #fff;
@@ -634,7 +649,7 @@ select option {
 	background-color: #fff;
 	color: #FF3F00;
 }
-.pagination .next-page, .search-tab .see-all a, .see-all a {
+.search-tab .see-all a, .see-all a {
 	background-position: right 1px;
 }
 .see-all a {
@@ -752,11 +767,6 @@ select option {
 	border: 1px #d3d3d3 solid;
 	background-color: #fff;
 	overflow: hidden;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 }
 .search-packages .search-container .search-results {
 	background: url('../img/search-bg.jpg') top repeat-x;
@@ -800,20 +810,8 @@ select option {
 .slick-dots li button {
 	background-position: -25px 0;
 }
-.efare-results-container .search-item .slick-slide {
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
 .efare-results-container .search-item .image img {
 	border: 1px #d3d3d3 solid;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 }
 .search-item .content {
 	padding-right: 0;
@@ -878,13 +876,8 @@ select option {
 	background: url('../img/icons/select-icon.jpg') no-repeat;
 }
 .filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select {
-	background-position: 99% 1px;
+	background-position: 96% 2px;
 	border: 1px solid #a4a4a4;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 	height: 36px;
 	outline: medium none;
 	overflow: hidden;
@@ -1059,11 +1052,6 @@ a.captionOrange:hover {
 }
 .palce-gallery-container .container-fluid {
 	border: 1px #b0b0b0 solid;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 	padding: 0;
 }
 .place-title {
@@ -1171,7 +1159,6 @@ a.captionOrange:hover {
 .specifications {
 	background: url('../img/nav-bg.jpg') top repeat-x;
 	border: 1px #b0b0b0 solid;
-	border-radius: 5px;
 	padding: 0 0 20px;
 	width: 712px;
 	margin-right: 6px;
@@ -1219,7 +1206,6 @@ a.captionOrange:hover {
 	width: auto;
 }
 .add-cart {
-	border-radius: 5px;
 	color: #777777;
 	display: block;
 	font-size: 12px;
@@ -1243,11 +1229,6 @@ a.captionOrange:hover {
 	font-weight: bold;
 	padding: 10px 11px;
 	color: #fff;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 	-o-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.5);
 	-ms-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.5);
 	-webkit-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.5);
@@ -1282,11 +1263,6 @@ a.captionOrange:hover {
 }
 .review-msg {
 	border: 1px solid #adadad;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 	height: 43px;
 	padding: 13px 0 0 12px;
 	width: 100%;
@@ -1322,7 +1298,6 @@ a.captionOrange:hover {
 	border-left: 1px #b0b0b0 solid;
 	border-right: 1px #b0b0b0 solid;
 	border-bottom: 1px #b0b0b0 solid;
-	border-radius: 7px;
 	width: 273px;
 	box-sizing: border-box;
 }
@@ -1339,7 +1314,6 @@ a.captionOrange:hover {
 }
 .recommended-item .image img {
 	border: 1px #cfcfcf solid;
-	border-radius: 5px;
 }
 /* pagination */
 
@@ -1370,7 +1344,7 @@ a.captionOrange:hover {
 	width: 26px;
 	text-indent: 30px;
 }
-.search-results .pagination .next-page {
+.search-container .pagination .next-page {
 	background-position: 5px -23px;
 	text-indent: 24px;
 }
@@ -1455,13 +1429,11 @@ a.captionOrange:hover {
 }
 .efare-results-container .recharge-tickets-container {
 	background-color: #efefef;
-	border-radius: 7px;
 }
 .datepicker {
 	background-color: #fff;
 	background-position: 94% -129px;
 	border: 1px solid #a4a4a4;
-	border-radius: 5px;
 	color: #777777;
 	font-size: 11px;
 	padding: 10px 29px 10px 14px;
@@ -1470,6 +1442,10 @@ a.captionOrange:hover {
 	width: 186px;
 	text-transform: none;
 	box-sizing: border-box;
+}
+.filters-business .datepicker {
+	padding: 6px 29px 6px 14px;
+	background-position: 94% -134px;
 }
 .recharge-tickets-container {
 	padding: 12px 9px 15px 17px;
@@ -1482,7 +1458,6 @@ a.captionOrange:hover {
 .refine-results-container {
 	border-bottom: 1px solid #b0b0b0;
 	border-left: 1px solid #b0b0b0;
-	border-radius: 7px;
 	border-right: 1px solid #b0b0b0;
 	box-sizing: border-box;
 	width: 225px;
@@ -1517,7 +1492,6 @@ a.captionOrange:hover {
 	height: 17px;
 	left: 0;
 	position: absolute;
-	transition: border 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
 	width: 17px;
 	top: -3px;
 	box-sizing: border-box;
@@ -1557,6 +1531,7 @@ a.captionOrange:hover {
 .filter-options .child, .filter-options .adult {
 	float: left;
 	margin-right: 18px;
+	margin-top: 15px;
 }
 .filter-options .child label, .filter-options .adult label {
 	display: block;
@@ -1707,7 +1682,6 @@ footer {
 .msp-trip-container {
 	background: url('../img/trip_bg.jpg') repeat-x;
 	height: 81px;
-	border-radius: 10px;
 	border: 1px #c5c5c5 solid;
 	position: absolute;
 	bottom: -36px;
