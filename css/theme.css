@@ -254,6 +254,10 @@ header {
 }
 .filters-container .container-fluid {
 	background-color: rgba(0,0,0,0.73);
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
 	border-radius: 8px;
 	height: 400px;
 	padding: 20px 20px 20px 62px;
@@ -320,6 +324,10 @@ select option {
 	display: inline-block;
 }
 .hotel a, .transporation a, .tour-package a, .efare a {
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
 	border-radius: 8px;
 }
 .efare-innter-content {
@@ -373,6 +381,14 @@ select option {
 	color: #FF3F00;
 }
 .efare-innter-content .admission-tickets a {
+	-ms-border-bottom-left-radius: 8px;
+	-o-border-bottom-left-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-ms-border-top-left-radius: 8px;
+	-o-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 	background-position: -251px 9px;
@@ -385,6 +401,14 @@ select option {
 	width: auto;
 }
 .efare-innter-content .diy a {
+	-ms-border-bottom-right-radius: 8px;
+	-o-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-ms-border-top-right-radius: 8px;
+	-o-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	background-position: -254px -197px;
@@ -473,6 +497,10 @@ select option {
 }
 .list {
 	border: 1px #d0d0d0 solid;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 	border-radius: 7px;
 	overflow: hidden;
 	padding: 0;
@@ -565,6 +593,22 @@ select option {
 }
 /* Drop Down Menu */
 .sf-js-enabled .dropdown-menu {
+	-ms-border-bottom-right-radius: 5px;
+	-o-border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-ms-border-bottom-left-radius: 5px;
+	-o-border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-ms-border-top-left-radius: 0;
+	-o-border-top-left-radius: 0;
+	-moz-border-top-left-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	-ms-border-top-right-radius: 0;
+	-o-border-top-right-radius: 0;
+	-moz-border-top-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 5px;
@@ -708,6 +752,10 @@ select option {
 	border: 1px #d3d3d3 solid;
 	background-color: #fff;
 	overflow: hidden;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 .search-packages .search-container .search-results {
@@ -753,10 +801,18 @@ select option {
 	background-position: -25px 0;
 }
 .efare-results-container .search-item .slick-slide {
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
 .efare-results-container .search-item .image img {
 	border: 1px #d3d3d3 solid;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
 .search-item .content {
@@ -824,6 +880,10 @@ select option {
 .filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select {
 	background-position: 99% 1px;
 	border: 1px solid #a4a4a4;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	height: 36px;
 	outline: medium none;
@@ -999,6 +1059,10 @@ a.captionOrange:hover {
 }
 .palce-gallery-container .container-fluid {
 	border: 1px #b0b0b0 solid;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 0;
 }
@@ -1072,6 +1136,10 @@ a.captionOrange:hover {
 	background-color: #000;
 	height: 26px;
 	width: 689px;
+	-ms-border-top-left-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
 	border-top-left-radius: 5px;
 }
 .play-pause {
@@ -1175,6 +1243,10 @@ a.captionOrange:hover {
 	font-weight: bold;
 	padding: 10px 11px;
 	color: #fff;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	-o-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.5);
 	-ms-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.5);
@@ -1184,7 +1256,7 @@ a.captionOrange:hover {
 }
 .book-now-cta:hover {
 	text-decoration: none;
-	color:#fff;
+	color: #fff;
 }
 .description-container {
 	border-top: 1px #b0b0b0 solid;
@@ -1210,6 +1282,10 @@ a.captionOrange:hover {
 }
 .review-msg {
 	border: 1px solid #adadad;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	height: 43px;
 	padding: 13px 0 0 12px;
@@ -1393,7 +1469,7 @@ a.captionOrange:hover {
 	cursor: pointer;
 	width: 186px;
 	text-transform: none;
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 .recharge-tickets-container {
 	padding: 12px 9px 15px 17px;
@@ -1652,10 +1728,13 @@ footer {
 	line-height: 34px;
 	padding-left: 14px;
 }
+.msp-trip-container .col-sm-3:first-child {
+	border: 0;
+}
 .msp-trip-container .col-sm-3 {
 	display: table;
 	height: 63px;
-	border-right: 1px #dadada solid;
+	border-left: 1px #dadada solid;
 }
 .msp-trip-container .line-item {
 	display: table-cell;
