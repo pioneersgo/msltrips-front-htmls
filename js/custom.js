@@ -167,12 +167,22 @@ $(document).ready(function(e) {
 	}
 	
 	var datePickerActive = $('#datepicker').length;
+	var datePickerActive2 = $('#datepicker2').length;
+	var datePickerActive3 = $('#datepicker3').length;
+	var datePickerActive4 = $('#datepicker4').length;
  	
 	if(datePickerActive>0){
     	$( "#datepicker" ).datepicker();
 	}
-  
-	
+	if(datePickerActive2>0){
+    	$( "#datepicker2" ).datepicker();
+	}
+	if(datePickerActive3>0){
+    	$( "#datepicker3" ).datepicker();
+	}
+	if(datePickerActive4>0){
+    	$( "#datepicker4" ).datepicker();
+	}
 
 	
 	
