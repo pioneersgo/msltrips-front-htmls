@@ -12,8 +12,9 @@
 	position: relative;
 }
 .slider.slider-horizontal {
-	width: 210px;
 	height: 20px;
+	margin-left: 1px;
+	margin-right: 9px;
 }
 .slider.slider-horizontal .slider-track {
 	height: 10px;
@@ -28,7 +29,7 @@
 	bottom: 0;
 }
 .slider.slider-horizontal .slider-handle {
-	margin-left: -10px;
+	margin-left: -4px;
 	margin-top: -5px;
 }
 .slider.slider-horizontal .slider-handle.triangle {
@@ -75,18 +76,12 @@
 .slider-track {
 	position: absolute;
 	cursor: pointer;
-	background-color: #86bb42;
+	background-color: #fff;
 	border: 1px #ebeae7 solid;
 }
 .slider-selection {
 	position: absolute;
-	background-color: #fff;
-	background-image: -moz-linear-gradient(top, #f9f9f9, #f5f5f5);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#f5f5f5));
-	background-image: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5);
-	background-image: -o-linear-gradient(top, #f9f9f9, #f5f5f5);
-	background-image: linear-gradient(to bottom, #f9f9f9, #f5f5f5);
-	background-repeat: repeat-x;
+	background-color: #86bb42;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -97,5 +92,5 @@
 	border-radius: 4px;
 	height: 18px;
 	position: absolute;
-	width: 20px;
+	width: 19px;
 }

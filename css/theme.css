@@ -111,6 +111,11 @@ h4 {
 	font-size: 18px;
 	line-height: 22px;
 }
+h5 {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight:bold;
+}
 .tab-container {
 	overflow: hidden;
 }
@@ -1201,15 +1206,16 @@ a.captionOrange:hover {
 }
 .book-now-container table th {
 	background-color: #eeeeee;
-	font-size: 12px;
-	line-height: 16px;
-	padding: 13px 16px;
 	color: #525252;
+	font-size: 12px;
 	font-weight: bold;
+	line-height: 16px;
+	padding: 13px 0 13px 25px;
 }
 .book-now-container table td {
 	font-size: 12px;
-	padding: 8px 7px 8px 7px;
+	padding: 8px 7px 8px 0;
+	text-align: center;
 }
 .specifications select {
 	padding: 0 37px 0 9px;
@@ -1260,6 +1266,9 @@ a.captionOrange:hover {
 }
 .review .date, .review .star {
 	display: inline-block
+}
+.review .rating{
+	padding:7px 0 7px;
 }
 .review .book-now-cta {
 	float: right;
@@ -1450,7 +1459,7 @@ a.captionOrange:hover {
 	padding: 9px 29px 9px 14px;
 	text-align: left;
 	text-transform: none;
-	width: 179px;
+	width: 185px;
 }
 .specifications .datepicker {
 	width: auto;
@@ -1534,14 +1543,13 @@ a.captionOrange:hover {
 	padding-left: 26px;
 }
 .refine-results-container .filter-options {
-	overflow: hidden;
-	padding: 11px 17px 8px;
+	padding: 11px 15px 8px 17px;
 }
 .filter-options select {
 	width: 75px;
 }
 .filter-options .child, .filter-options .adult {
-	float: left;
+	display: inline-block;
 	margin-right: 18px;
 	margin-top: 15px;
 }

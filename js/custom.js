@@ -158,13 +158,13 @@ $(document).ready(function(e) {
 	
 	var sliderActive = $('.slider-bar').length;
 	
-	if(sliderActive>0){
-		$('.slider-bar').slider({
-			min:50,
-			min:250,
-			step:50,
+	if(sliderActive>0){	
+		$(".slider-bar").slider();
+		$(".slider-bar").on("slide", function(slideEvt) {
+			$("#ex6SliderVal").text(slideEvt.value);
 		});
 	}
+	
 	
 	var datePickerActive = $('#datepicker').length;
 	var datePickerActive2 = $('#datepicker2').length;
