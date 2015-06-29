@@ -3453,7 +3453,7 @@ var $JssorThumbnailNavigator$ = window.$JssorThumbnailNavigator$ = function (elm
 
             _Button = $Jssor$.$Buttonize(_Wrapper);
             if (_Options.$ActionMode & 1)
-                $Jssor$.$AddEvent(_Wrapper, "click", $Jssor$.$CreateCallback(null, OnNavigationRequest, 0));
+                $Jssor$.$AddEvent(_Wrapper, "mouseover", $Jssor$.$CreateCallback(null, OnNavigationRequest, 0));
             if (_Options.$ActionMode & 2)
                 $Jssor$.$AddEvent(_Wrapper, "mouseover", $Jssor$.$MouseOverOutFilter($Jssor$.$CreateCallback(null, OnNavigationRequest, 1), _Wrapper));
         }
