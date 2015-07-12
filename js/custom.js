@@ -185,6 +185,20 @@ $(document).ready(function(e) {
 	}
 
 	
+	/* Account Tab Height */
+	var accContainerHeigth = $(".myaccount-container").outerHeight();
+	$(".myaccount").css("height",accContainerHeigth);
+	
+	$("form .form-item").each(function(){
+		var label = $(this).find("label").length;
+		var selectlist =  $(this).find("select").length;
+		//alert(label);
+		if(label==2){
+			$(this).find("select").next().css("padding-right","15px");
+			$(this).find("select").next().css("text-align","right");
+		}
+	});
+	
 	
 	/* --------------------------------------------------------------------- */
 	/* 7. Gallery Setup

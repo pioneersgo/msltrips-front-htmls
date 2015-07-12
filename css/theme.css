@@ -41,7 +41,7 @@ body {
 	font-size: 11px;
 }
 /* font-size 12px */
-.refine-results-container .filter-options, .description-container .content li, .add-cart, .wishlist a, .results-per-page label, .sortby label, .tab-container li a, .search-tab .see-all a, .tickets-tab a, .p-link a, .f-links a, .search-tab a, .search-tab .see-all a, .list .location, .filter-category a, .nav > li > a, p {
+.myaccount-container .form-item input, .myaccount .panel-body li a, .myaccount .panel-heading a, .myaccount-container .point label, .myaccount-container .form-item label, .legent, .timeline .day-timeline .day, .book-it, .myaccount-container table td, .book-now-container table td, .add-cart, .myaccount-container table th, .book-now-container table th, .book-now-container .panel-body .total-price .room, .sortby .product-type, .refine-results-container .filter-options, .description-container .content li, .add-cart, .wishlist a, .results-per-page label, .sortby label, .tab-container li a, .search-tab .see-all a, .tickets-tab a, .p-link a, .f-links a, .search-tab a, .search-tab .see-all a, .list .location, .filter-category a, .nav > li > a, p {
 	font-size: 12px;
 }
 /* font-size 13px */
@@ -77,7 +77,7 @@ p {
 	border-radius: 7px;
 }
 /* Border radius 5px; */
-.recommended-item .image img, .datepicker, .book-now-cta, .specifications, .add-cart, .palce-gallery-container .container-fluid, .filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select, .search-packages .search-container {
+.recommended-item .image img, .datepicker, .book-now-cta, .specifications, .add-cart, .palce-gallery-container .container-fluid, .filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .filters select, .search-packages .search-container {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -114,7 +114,7 @@ h4 {
 h5 {
 	font-size: 12px;
 	line-height: 16px;
-	font-weight:bold;
+	font-weight: bold;
 }
 .tab-container {
 	overflow: hidden;
@@ -179,7 +179,7 @@ header {
 
 
 /* Float left elements */
-.timeline .day-timeline, .timeline .image, .specifications .tab-menu li, .sortby-container .form-item, .price-box .price, .pagination li, .filters-business .form-item, .tickets-tab a, .form-item-date .form-item, .filters .form-item, .list-container li, .sortby-container .business-sortby .form-item, .sortby-container .business-sortby, .sortby-container .results-count, .search-tab .tpackage, .search-tab .efare, .search-item .price, .admission-tickets, .joint-tickets, .diy, .tab-container li {
+.book-now-container .panel-body .total-price .room, .book-now-container .panel-body .book-it, .book-now-container .panel-body .add-cart, .timeline .day-timeline, .timeline .image, .specifications .tab-menu li, .sortby-container .form-item, .price-box .price, .pagination li, .filters-business .form-item, .tickets-tab a, .form-item-date .form-item, .filters .form-item, .list-container li, .sortby-container .business-sortby .form-item, .sortby-container .business-sortby, .sortby-container .results-count, .search-tab .tpackage, .search-tab .efare, .search-item .price, .admission-tickets, .joint-tickets, .diy, .tab-container li {
 	float: left;
 }
 .tab-container li .active {
@@ -598,7 +598,7 @@ select option {
 	right: 9px;
 	top: -20px;
 }
-.datepicker, .refine-results-container .filter-label, .nav > li > a, .pagination .next-page, .search-tab .see-all a, .see-all a {
+.book-now-container .panel-heading a, .datepicker, .refine-results-container .filter-label, .nav > li > a, .pagination .next-page, .search-tab .see-all a, .see-all a {
 	background: url('../img/icons/see-all-icon.png') no-repeat;
 	color: #525252;
 	text-transform: uppercase;
@@ -878,10 +878,10 @@ select option {
 	box-sizing: border-box;
 	padding-left: 8px;
 }
-.efare-results-container .pagination .prev-page, .efare-results-container .pagination .next-page, .filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select {
+.myaccounts-container .pagination .next-page, .myaccounts-container .pagination .prev-page, .efare-results-container .pagination .prev-page, .efare-results-container .pagination .next-page, .filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .filters select {
 	background: url('../img/icons/select-icon.jpg') no-repeat;
 }
-.filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .filters select {
+.filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .filters select {
 	background-position: 96% 2px;
 	border: 1px solid #a4a4a4;
 	height: 36px;
@@ -902,7 +902,7 @@ select option {
 .layouts {
 	padding-top: 3px;
 }
-.filter-options select, .efare-box select, .recharge-tickets-container select, .specifications select, .business-sortby .form-item select, .filters-business select, .filters select {
+.filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .business-sortby .form-item select, .filters-business select, .filters select {
 	-webkit-appearance: none;
 	-o-appearance: none;
 	-ms-appearance: none;
@@ -918,7 +918,7 @@ select option {
 .filters-business .form-item {
 	margin-right: 20px;
 }
-.results-per-page label, .sortby label, .filters-business label {
+.sortby .product-type, .results-per-page label, .sortby label, .filters-business label {
 	color: #878787;
 	padding-right: 10px;
 }
@@ -1123,7 +1123,7 @@ a.captionOrange:hover {
 	background-color: #85B200;
 }
 /* Tour Package Color Scheme */
-.tour-package-details .pagination .active, .tour-package-details .search-item .sale-price, .tour-package-details .sortby-container .results-count, .tour-package-details .efare-box .title, .tour-package-details .recharge-tickets-container .title, .tour-package-details .specifications .tab-menu .active, .tour-package-details .book-now-container .title, .tour-package-details .total-price .price, .tour-package-details .price-box .sale-price {
+.myaccount-container .points, .tour-package-details .myaccount .panel-heading a, .tour-package-details .pagination .active, .tour-package-details .search-item .sale-price, .tour-package-details .sortby-container .results-count, .tour-package-details .efare-box .title, .tour-package-details .recharge-tickets-container .title, .tour-package-details .specifications .tab-menu .active, .tour-package-details .title, .tour-package-details .total-price .price, .tour-package-details .price-box .sale-price {
 	color: #ff3f00;
 }
 .tour-package-details .book-now-cta {
@@ -1196,7 +1196,59 @@ a.captionOrange:hover {
 	display: inline-block;
 }
 .book-now-container {
-	padding: 21px 40px 5px 27px;
+	padding: 21px 35px 5px 27px;
+}
+.book-now-container .panel-body {
+	background-color: #eeeeee;
+	padding: 0 0 20px 0;
+}
+.book-now-container .panel-body .content a {
+	color: #333;
+	text-decoration: underline;
+}
+.book-now-container .panel-body .add-cart {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.book-now-container .panel-body .content {
+	padding: 10px 15px;
+}
+.book-now-container .panel-body .content .title {
+	color: #525252;
+	margin-bottom: 8px;
+}
+.book-now-container .panel-body table {
+	margin-bottom: 0;
+	border: 0;
+}
+.book-now-container .panel-heading {
+	padding: 0;
+}
+.book-now-container .panel {
+	border-radius: 0;
+	border: 1px #b0b0b0 solid;
+}
+.book-now-container .panel-heading a {
+	font-family: 'HelveticaNeueLTPro-Lt';
+	font-size: 24px;
+	padding: 10px 15px;
+	display: block;
+	text-align: left;
+	background-position: 97.2% -44px;
+	text-transform: none;
+}
+.book-now-container .panel-body table th, .book-now-container .panel-heading {
+	background-color: #fff;
+}
+.book-now-container .panel-body .total-price {
+	border-top: 1px #999999 solid;
+	padding-top: 15px;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.book-now-container .panel-body .total-price .price {
+	padding-top: 0;
 }
 .book-now-container table {
 	margin-top: 18px;
@@ -1204,18 +1256,33 @@ a.captionOrange:hover {
 	margin-bottom: 30px;
 	width: 100%;
 }
-.book-now-container table th {
+.book-now-container table td:first-child, .book-now-container table th:first-child, .myaccount-container table td:first-child, .myaccount-container table th:first-child {
+	text-align: left;
+}
+.myaccount-container table th, .book-now-container table th {
 	background-color: #eeeeee;
 	color: #525252;
-	font-size: 12px;
 	font-weight: bold;
-	line-height: 16px;
-	padding: 13px 0 13px 25px;
-}
-.book-now-container table td {
-	font-size: 12px;
-	padding: 8px 7px 8px 0;
+	padding: 13px 11px;
 	text-align: center;
+}
+.myaccount-container table td, .book-now-container table td {
+	padding: 10px 7px 10px 15px;
+	text-align: center;
+}
+.myaccount-container .pagination {
+	border-top: 1px solid #ebeae7;
+	margin-top: 18px;
+	padding-right: 0;
+	padding-top: 12px;
+	text-align: right;
+	width: 100%;
+}
+.myaccount-container table td {
+	border-top: 1px #ebeae7 solid;
+}
+.myaccount-container table td a {
+	color: #333;
 }
 .specifications select {
 	padding: 0 37px 0 9px;
@@ -1224,11 +1291,22 @@ a.captionOrange:hover {
 .add-cart {
 	color: #777777;
 	display: block;
-	font-size: 12px;
 	font-weight: normal;
-	line-height: 16px;
-	min-width: 81px;
 	text-align: center;
+}
+.book-it {
+	background: url('../img/button-bg.jpg');
+	background-size: cover;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #fff;
+	display: block;
+	font-weight: normal;
+	text-align: center;
+	padding: 9px 11px;
+	border-top: 1px #adadad solid;
+	border-bottom: 1px #adadad solid;
+	border-right: 1px #adadad solid;
 }
 .total-price {
 	text-align: right;
@@ -1267,8 +1345,8 @@ a.captionOrange:hover {
 .review .date, .review .star {
 	display: inline-block
 }
-.review .rating{
-	padding:7px 0 7px;
+.review .rating {
+	padding: 7px 0 7px;
 }
 .review .book-now-cta {
 	float: right;
@@ -1357,7 +1435,7 @@ a.captionOrange:hover {
 	color: #d90000;
 	font-weight: bold;
 }
-.efare-results-container .pagination .prev-page, .efare-results-container .pagination .next-page {
+.myaccounts-container .pagination .next-page, .myaccounts-container .pagination .prev-page, .efare-results-container .pagination .prev-page, .efare-results-container .pagination .next-page {
 	height: 26px;
 	width: 26px;
 	text-indent: 30px;
@@ -1366,11 +1444,11 @@ a.captionOrange:hover {
 	background-position: 5px -23px;
 	text-indent: 24px;
 }
-.efare-results-container .pagination .prev-page {
+.myaccounts-container .pagination .prev-page, .efare-results-container .pagination .prev-page {
 	background-position: 0 -124px;
 	margin-right: 7px;
 }
-.efare-results-container .pagination .next-page {
+.myaccounts-container .pagination .next-page, .efare-results-container .pagination .next-page {
 	background-position: 0 -61px;
 	margin-left: 7px;
 }
@@ -1396,9 +1474,6 @@ a.captionOrange:hover {
 .timeline .day-timeline label {
 	color: #FF4000;
 	display: block;
-}
-.timeline .day-timeline .day {
-	font-size: 12px;
 }
 .timeline .day-timeline .day-num {
 	font-size: 20px;
@@ -1439,6 +1514,8 @@ a.captionOrange:hover {
 }
 .efare-results-container {
 	padding-top: 24px;
+	min-height: 447px;
+	padding-bottom: 20px;
 }
 .efare-container .recharge-tickets-container {
 	position: absolute;
@@ -1501,6 +1578,122 @@ a.captionOrange:hover {
 	text-align: left;
 	clear: both;
 	text-transform: none;
+}
+/* My account */
+.myaccounts-container {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+.myaccount {
+	margin-top: 0;
+	width: 251px;
+	min-height: 338px;
+}
+.myaccount-container {
+	border: 1px #b0b0b0 solid;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	margin-left: 34px;
+	width: 722px;
+	padding: 28px 55px;
+	min-height: 338px;
+	box-sizing: border-box;
+}
+.myaccount-container table {
+	width: 100%;
+}
+.sortby .product-type {
+	padding-bottom: 8px;
+}
+.myaccount .panel-group .panel:first-child .panel-heading {
+	border-top: 1px solid #b0b0b0;
+	font-weight: bold;
+	border-radius: 7px;
+}
+.myaccount-container .sortby {
+	margin-top: 17px;
+	margin-bottom: 20px;
+}
+.myaccount-container .form-item {
+	margin-bottom: 20px;
+}
+.legent {
+	text-align: right;
+	padding-bottom: 8px;
+}
+.myaccount-container form {
+	margin-top: 34px;
+}
+.myaccount-container .form-item label {
+	width: 131px;
+	color: #858585;
+	font-weight: bold;
+}
+.acc-details .form-item label {
+	width: 90px;
+}
+.myaccount-container .form-item input {
+	border: 1px #adadad solid;
+	border-radius: 5px;
+	height: 31px;
+	width: 293px;
+	padding-left: 13px;
+	color: #858585;
+	box-sizing: border-box;
+}
+.myaccount-container .point {
+	text-align: right;
+}
+.myaccount-container .point .points {
+	font-weight: bold;
+	font-size: 20px;
+}
+.myaccount-container .sortby label {
+	width: auto;
+}
+.myaccount-container .sortby .datepicker {
+	width: 154px;
+	height: auto;
+}
+.myaccount-container .form-item .zipcode {
+	width: 96px;
+}
+.myaccount .panel-group .panel .panel-heading {
+	background-color: #f8f8f8;
+	padding: 0;
+}
+.myaccount .panel-heading a {
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding: 14px 5px 14px 25px;
+}
+.book-now-container .panel-heading a:link, .book-now-container .panel-heading a:visited, .book-now-container .panel-heading a:hover, .myaccount .panel-heading a:link, .myaccount .panel-heading a:visited, .myaccount .panel-heading a:hover {
+	text-decoration: none;
+	outline: none;
+}
+.myaccount .panel-group .panel {
+	border-radius: 7px;
+	border: 0;
+	margin: 0;
+	border-bottom: 1px #e7e7e7 solid;
+}
+.myaccount .panel-body {
+	padding: 0;
+	border: 0;
+}
+.myaccount .panel-body li a {
+	color: #aaa;
+	border-bottom: 1px #e7e7e7 solid;
+	display: block;
+	padding: 10px 5px 10px 25px;
+}
+.myaccount .panel-body li .active, .myaccount .panel-body li a:hover {
+	color: #333;
+	text-decoration: none;
 }
 .checkbox input[type="checkbox"] {
 	opacity: 0;
