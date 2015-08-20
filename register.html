@@ -60,10 +60,10 @@
       <div class="col-sm-7 col-xs-6 list-container">
         <ul>
           <li><a href="" class="myaccount" id="dLabelAcc" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MYACCOUNT</a>
-          	<ul class="dropdown-menu" aria-labelledby="dLabelAcc">
-                <li><a href="">Account Details</a></li>
-                <li><a href="">Account Integration</a></li>
-              </ul>
+            <ul class="dropdown-menu" aria-labelledby="dLabelAcc">
+              <li><a href="">Account Details</a></li>
+              <li><a href="">Account Integration</a></li>
+            </ul>
           </li>
           <li><a href="" class="cart">MY CART</a></li>
           
@@ -140,94 +140,167 @@
 </div>
 <!-- END SOCIAL DRAWER --> 
 
+<!-- Button trigger modal --> 
+
+<!-- START LOGIN MODAL -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-content-login">
+      <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row"> 
+            <!-- START ACCOUNT -->
+            <form>
+              <div class="myaccount-container login">
+                <div class="col-sm-7 login-form">
+                  <h4 class="title col-orange">RETURNING CUSTOMERS</h4>
+                  <div class="form-item">
+                    <label>Username / Email adress</label>
+                    <input type="text" >
+                  </div>
+                  <div class="form-item">
+                    <label>Password*</label>
+                    <input type="password">
+                  </div>
+                  <div class="terms">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <input type="checkbox">
+                        Remember me<br>
+                        <a href="#">Forgotten your password?</a> </div>
+                      <div class="col-sm-4">
+                        <input type="submit" class="book-now-cta" value="Log in">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- END ACCOUNT --> 
+                
+                <!-- STRAT PERSONAL DETAILS -->
+                
+                <div class="col-sm-5 new-customer">
+                  <h4 class="title col-orange">NEW CUSTOMERS</h4>
+                  <p>Create a Msl Trips account nowr to make trips easier</p>
+                  <div class="pull-right">
+                    <input type="submit" class="book-now-cta" value="Register">
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+            <!-- END PERSONAL DETIALS--> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END LOGIN MODAL --> 
+
 <!-- START FILTER RESULTS -->
 
 <div class="myaccounts-container">
   <div class="container-fluid">
+    <div class="row account-title">
+      <div class="col-sm-8">
+        <h4 class="title">CREATE YOUR ACCOUNT</h4>
+      </div>
+      <div class="col-sm-4"> <a href="" class="already-register pull-right col-orange" data-toggle="modal" data-target="#myModal">Already register?</a> </div>
+    </div>
     <div class="row"> 
-      
-      <!-- START LEFT SIDE BAR WITH REFINE RESULTS -->
-      <div class="col-sm-3"> 
-        
-        <!-- START REFINE RESULTS -->
-        <div class="refine-results-container myaccount">
-
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#nav-item1" aria-expanded="true" aria-controls="nav-item1"> MY ACCOUNT</a> </div>
-              <div id="nav-item1" class="panel-collapse collapse in" role="tabpanel">
-                <div class="panel-body">
-                  <ul>
-                    <li><a href="">MY DETAILS</a></li>
-                    <li><a href="" class="active">CHANGE MY PASSWORD</a></li>
-                    <li><a href="">PURCHASE HISTORY</a></li>
-                    <li><a href="">ACCOUNT INTEGRATION</a></li>
-                  </ul>
-                </div>
-              </div>
+      <!-- START ACCOUNT -->
+      <form>
+        <div class="myaccount-container create-account acc-details">
+          <div class="col-sm-7">
+            <div class="tips">Create a Msl Trips account nowr to make trips easier</div>
+            <div class="form-item">
+              <label>Username*</label>
+              <input type="text" >
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#nav-item2" aria-expanded="false" aria-controls="nav-item2"> ORDER MANGEMENT </a> </div>
-              <div id="nav-item2" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <ul>
-                    <li><a href="">Item1</a></li>
-                    <li><a href="">Item2</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="form-item">
+              <label>Email*</label>
+              <input type="text">
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#nav-item3" aria-expanded="false" aria-controls="nav-item3"> PRODUCT MANGEMENT </a> </div>
-              <div id="nav-item3" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <ul>
-                    <li><a href="">Item1</a></li>
-                    <li><a href="">Item2</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="form-item">
+              <label>Password*</label>
+              <input type="password">
+            </div>
+          </div>
+          
+          <!-- END ACCOUNT --> 
+          
+          <!-- STRAT PERSONAL DETAILS -->
+          
+          <div class="col-sm-5">
+            <h4 class="title">PERSONAL DETAILS</h4>
+            <div class="form-item">
+              <label>First name*</label>
+              <input type="text" >
+            </div>
+            <div class="form-item">
+              <label>Last name*</label>
+              <input type="text">
+            </div>
+            <div class="form-item">
+              <label>Address*</label>
+              <input type="text">
+            </div>
+            <div class="form-item">
+              <label>Country</label>
+              <select>
+                <option>France</option>
+              </select>
+              <label>State</label>
+              <select>
+                <option>Loire</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label>City*</label>
+              <select>
+                <option>Angers</option>
+              </select>
+              <label>Zip code</label>
+              <input type="text" class="zipcode">
+            </div>
+            <div class="form-item">
+              <label>Company</label>
+              <input type="text">
+            </div>
+            <div class="form-item">
+              <label>Phone</label>
+              <input type="text">
+            </div>
+            <div class="form-item">
+              <label>Fax</label>
+              <input type="text">
             </div>
           </div>
         </div>
-      </div>
-      <!-- END REFINE RESULTS --> 
-      
-      <!-- END LEFT SIDE BAR WITH REFINE RESULTS --> 
-      
-      <!-- STRAT FILTER RESULTS -->
-      
-      <div class="col-sm-9 myaccount-container">
-      	<h2 class="title">CHANGE MY PASSWORD</h2>
-        <form>
-        	<div class="form-item">
-            	<label>Current Password</label>
-           		<input type="password" >
-            </div>
-            <div class="form-item">
-            	<label>New Password</label>
-           		<input type="password" >
-            </div>
-            <div class="form-item">
-            	<label>Confirm Password</label>
-           		<input type="password" >
-            </div>
-            
-            <div class="pull-right">
-          	 <input type="submit" value="APPLY CHANGES" class="book-now-cta">
+        <div class="col-sm-8 terms">
+          <input type="checkbox">
+          I agree to the terms & conditions<br>
+          <input type="checkbox">
+          I agree to accept news from Msl trip.com </div>
+        <div class="col-sm-4">
+          <div class="pull-right">
+            <div class="legent">* Required Fields</div>
+            <input type="submit" value="APPLY CHANGES" class="book-now-cta">
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
       
-      <!-- END FILTER RESULT--> 
-      
+      <!-- END PERSONAL DETIALS--> 
       
     </div>
   </div>
 </div>
 
 <!-- END FILTER RESULTS --> 
-
 
 <!-- START FOOTER -->
 

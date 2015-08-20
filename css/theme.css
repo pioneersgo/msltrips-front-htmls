@@ -52,6 +52,9 @@ p {
 	color: #525252;
 	line-height: 19px;
 }
+a:focus {
+	outline: none;
+}
 /* Border radius 10px; */
 .review-msg, .msp-trip-container, .efare-results-container .search-item .image img, .efare-results-container .search-item .slick-slide, .msp-trip-container {
 	-ms-border-radius: 10px;
@@ -218,6 +221,12 @@ header {
 	float: right;
 	padding-top: 8px;
 }
+.list-container .dropdown-menu {
+	top: 23px;
+}
+.list-container .dropdown-menu li a {
+	padding: 3px 11px;
+}
 .list-container li .dropdown-menu li, .list-container li:first-child {
 	border-left: 0;
 	background: none;
@@ -234,8 +243,12 @@ header {
 	line-height: 14px;
 	color: #666666;
 }
+.list-container a:focus, .list-container a:hover {
+	text-decoration: none;
+	outline: none;
+}
 .list-container .dropdown-menu {
-	min-width: 0;
+	min-width: 85px;
 }
 .list-container .dropdown-menu li {
 	padding: 3px 0;
@@ -244,19 +257,21 @@ header {
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
 	width: 100%;
 }
-.jssora02l, .jssora02r, .next-btn, .list-container .language, .list-container .cart, .list-container .myaccount {
+.business .list-container li:first-child a, .business .list-container li:first-child, .list-container li:first-child, .jssora02l, .jssora02r, .next-btn, .list-container .language, .list-container .cart, .list-container .myaccount {
 	background: url('../img/icons/sprite-icons.png') no-repeat;
 }
-.list-container .myaccount {
-	background-position: left -1px;
+.list-container li:first-child {
+	background-position: left 2px;
 	padding-left: 22px;
+	padding-right: 10px;
+	position: relative;
 }
 .business .list-container a {
 	text-transform: capitalize;
 	color: #fff;
 }
-.business .list-container .myaccount {
-	background-position: left -80px;
+.business .list-container li:first-child {
+	background-position: left -77px;
 }
 .business .list-container .dropdown-menu a {
 	color: #333;
@@ -269,11 +284,15 @@ header {
 .business .list-container .cart {
 	background-position: left -97px;
 }
-.list-container .language {
+.list-container .myaccount, .list-container .language {
 	background-position: right -36px;
 	padding-right: 22px;
 }
-.business .list-container .language {
+.list-container .dropdown-menu li:first-child, .list-container li:first-child .dropdown-menu li {
+	padding-right: 0;
+	padding-left: 0;
+}
+.business .list-container li:first-child a, .business .list-container .language {
 	background-position: right -117px;
 }
 /* #Filter Box
@@ -1129,6 +1148,25 @@ a.captionOrange:hover {
 .tour-package-details .book-now-cta {
 	background-color: #ff3f00;
 }
+.modal-content-login .book-now-cta {
+	background-color: #444;
+}
+.modal-content-login {
+	border: 0;
+}
+.modal-content-login .new-customer p {
+	min-height: 143px;
+}
+.modal-content-login {
+	-webkit-box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
+	-moz-box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
+	box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
 .price-box .old-price {
 	font-size: 16px;
 }
@@ -1601,6 +1639,63 @@ a.captionOrange:hover {
 	padding: 28px 55px;
 	min-height: 338px;
 	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.login, .create-account {
+	width: auto;
+	border: 0;
+	border-radius: 0;
+	border-top: 1px #b0b0b0 solid;
+	border-bottom: 1px #b0b0b0 solid;
+	padding: 28px 0;
+	margin-left: 0;
+	clear: both;
+	margin-top: 20px;
+	min-height: 0;
+}
+.modal-content-login .close {
+	background: url('../img/icons/close-btn.png') no-repeat;
+	height: 16px;
+	opacity: 1;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	width: 16px;
+	z-index: 99;
+}
+.modal-content-login .terms a {
+	color: #777;
+	text-decoration: underline;
+	display: block;
+	margin-top: 7px;
+}
+.modal-content-login .terms, .myaccounts-container .terms {
+	font-size: 12px;
+	line-height: 16px;
+	color: #777;
+}
+.modal-content-login .terms input[type="checkbox"], .myaccounts-container .terms input[type="checkbox"] {
+	margin-right: 6px;
+	position: relative;
+	top: 2px;
+}
+.create-account .title {
+	margin-bottom: 20px;
+	color: #333333;
+}
+.already-register {
+	bottom: -16px;
+	font-size: 13px;
+	line-height: 17px;
+	margin-bottom: 5px;
+	position: relative;
+	text-decoration: underline;
+}
+.create-account .tips {
+	padding-bottom: 28px;
+	font-size: 12px;
+	line-height: 16px;
 }
 .myaccount-container table {
 	width: 100%;
@@ -1631,6 +1726,23 @@ a.captionOrange:hover {
 	width: 131px;
 	color: #858585;
 	font-weight: bold;
+}
+.login .form-item label {
+	width: auto;
+}
+.login {
+	border: 0 none;
+	margin: 0;
+	padding: 7px 0 15px;
+}
+.login .login-form {
+	border-right: 1px #dadada solid;
+}
+.login .login-form label {
+	margin-bottom: 5px;
+}
+.login .title {
+	margin-bottom: 20px;
 }
 .acc-details .form-item label {
 	width: 90px;
