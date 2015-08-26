@@ -730,6 +730,9 @@ select option {
 	text-align: center;
 	text-indent: -3px;
 	top: 58px;
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 	width: 152px;
 	border-top-right-radius: 5px;
