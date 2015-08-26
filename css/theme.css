@@ -1747,6 +1747,17 @@ a.captionOrange:hover {
 .acc-details .form-item label {
 	width: 90px;
 }
+.acc-details .form-item span {
+	color: #858585;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	padding-left: 4px;
+	position: relative;
+	top: 6px;
+	width: 146px;
+}
 .myaccount-container .form-item input {
 	border: 1px #adadad solid;
 	border-radius: 5px;
