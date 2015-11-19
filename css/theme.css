@@ -4,19 +4,20 @@
 */
 /* Table of Content
 ==================================================
-	#Document Setup
-	#Typology
-	#HEADER
-	#Filter Box
-	#TOP ATTRACTIONS
-	#TOUR PACKAGES
-	#GALLERY
-	#Efare and Tour Package Base Theme color Based on body class
-	#Specifications
-	#Timeline
-	#FOOTER
-	#MEDIA QURIES
-	
+#Document Setup
+#Typology
+#HEADER
+#Filter Box
+#TOP ATTRACTIONS
+#TOUR PACKAGES
+#GALLERY
+#Efare and Tour Package Base Theme color Based on body class
+#Specifications
+#Timeline
+#Checkout
+#FOOTER
+#MEDIA QURIES
+
 
 
 /* #Document Setup
@@ -41,7 +42,7 @@ body {
 	font-size: 11px;
 }
 /* font-size 12px */
-.myaccount-container .form-item input, .myaccount .panel-body li a, .myaccount .panel-heading a, .myaccount-container .point label, .myaccount-container .form-item label, .legent, .timeline .day-timeline .day, .book-it, .myaccount-container table td, .book-now-container table td, .add-cart, .myaccount-container table th, .book-now-container table th, .book-now-container .panel-body .total-price .room, .sortby .product-type, .refine-results-container .filter-options, .description-container .content li, .add-cart, .wishlist a, .results-per-page label, .sortby label, .tab-container li a, .search-tab .see-all a, .tickets-tab a, .p-link a, .f-links a, .search-tab a, .search-tab .see-all a, .list .location, .filter-category a, .nav > li > a, p {
+.checkout-steps .step, .traveler-information input, .traveler-information .category, .term-text, .payment-form .form-item label, .confirmation-msg, .confirmation-msg .links a, .checkout-item table td, .checkout-item-price label, .acc-details .form-item span, .create-account .tips, .modal-content-login .terms, .myaccounts-container .terms, .myaccount-container .form-item input, .myaccount .panel-body li a, .myaccount .panel-heading a, .myaccount-container .point label, .myaccount-container .form-item label, .legent, .timeline .day-timeline .day, .book-it, .myaccount-container table td, .book-now-container table td, .add-cart, .myaccount-container table th, .book-now-container table th, .book-now-container .panel-body .total-price .room, .sortby .product-type, .refine-results-container .filter-options, .description-container .content li, .add-cart, .wishlist a, .results-per-page label, .sortby label, .tab-container li a, .search-tab .see-all a, .tickets-tab a, .p-link a, .f-links a, .search-tab a, .search-tab .see-all a, .list .location, .filter-category a, .nav > li > a, p {
 	font-size: 12px;
 }
 /* font-size 13px */
@@ -53,7 +54,7 @@ p {
 	line-height: 19px;
 }
 a:focus {
-	outline: none;
+	border: 0;
 }
 /* Border radius 10px; */
 .review-msg, .msp-trip-container, .efare-results-container .search-item .image img, .efare-results-container .search-item .slick-slide, .msp-trip-container {
@@ -182,8 +183,12 @@ header {
 
 
 /* Float left elements */
-.book-now-container .panel-body .total-price .room, .book-now-container .panel-body .book-it, .book-now-container .panel-body .add-cart, .timeline .day-timeline, .timeline .image, .specifications .tab-menu li, .sortby-container .form-item, .price-box .price, .pagination li, .filters-business .form-item, .tickets-tab a, .form-item-date .form-item, .filters .form-item, .list-container li, .sortby-container .business-sortby .form-item, .sortby-container .business-sortby, .sortby-container .results-count, .search-tab .tpackage, .search-tab .efare, .search-item .price, .admission-tickets, .joint-tickets, .diy, .tab-container li {
+.traveler-information .item, .book-now-container .panel-body .total-price .room, .book-now-container .panel-body .book-it, .book-now-container .panel-body .add-cart, .timeline .day-timeline, .timeline .image, .specifications .tab-menu li, .sortby-container .form-item, .price-box .price, .pagination li, .filters-business .form-item, .tickets-tab a, .form-item-date .form-item, .filters .form-item, .list-container li, .sortby-container .business-sortby .form-item, .sortby-container .business-sortby, .sortby-container .results-count, .search-tab .tpackage, .search-tab .efare, .search-item .price, .admission-tickets, .joint-tickets, .diy, .tab-container li {
 	float: left;
+}
+/* Float Right elements */
+.price-box .details, .sortby-container .business-sortby, .search-item .details, .list-container ul {
+	float: right;
 }
 .tab-container li .active {
 	background: url('../img/active-shadow.jpg') no-repeat;
@@ -218,7 +223,6 @@ header {
 	padding-right: 0;
 }
 .list-container ul {
-	float: right;
 	padding-top: 8px;
 }
 .list-container .dropdown-menu {
@@ -481,7 +485,6 @@ select option {
 	padding: 7px 15px;
 }
 .search-item .details {
-	float: right;
 	padding-right: 10px;
 }
 .add-cart, .cta {
@@ -670,6 +673,10 @@ select option {
 	border-top: 1px #ebeae7 solid;
 	color: #FF3F00;
 }
+.dropdown-menu li:last-child a:hover {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
 .sf-js-enabled .dropdown-menu > li > a:hover {
 	background-color: #fff;
 	color: #FF3F00;
@@ -730,9 +737,10 @@ select option {
 	text-align: center;
 	text-indent: -3px;
 	top: 58px;
-	-moz-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 	width: 152px;
 	border-top-right-radius: 5px;
@@ -924,7 +932,7 @@ select option {
 .layouts {
 	padding-top: 3px;
 }
-.filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .business-sortby .form-item select, .filters-business select, .filters select {
+.traveler-information select, .filter-options select, .efare-box select, .recharge-tickets-container select, .form-item select, .business-sortby .form-item select, .filters-business select, .filters select {
 	-webkit-appearance: none;
 	-o-appearance: none;
 	-ms-appearance: none;
@@ -958,9 +966,6 @@ select option {
 	color: #d90000;
 	font-size: 18px;
 	padding-top: 7px;
-}
-.sortby-container .business-sortby {
-	float: right;
 }
 .form-item .layouts a {
 	background: url('../img/icons/view-layouts-icons.png') no-repeat;
@@ -1161,9 +1166,9 @@ a.captionOrange:hover {
 	min-height: 143px;
 }
 .modal-content-login {
-	-webkit-box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
-	-moz-box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
-	box-shadow: inset 0px 0px 4px 3px rgba(219,219,219,1);
+	-webkit-box-shadow: inset 0 0 4px 3px rgba(219,219,219,1);
+	-moz-box-shadow: inset 0 0 4px 3px rgba(219,219,219,1);
+	box-shadow: inset 0 0 4px 3px rgba(219,219,219,1);
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1172,9 +1177,6 @@ a.captionOrange:hover {
 }
 .price-box .old-price {
 	font-size: 16px;
-}
-.price-box .details {
-	float: right;
 }
 .top-overlay {
 	background-color: #000;
@@ -1674,8 +1676,6 @@ a.captionOrange:hover {
 	margin-top: 7px;
 }
 .modal-content-login .terms, .myaccounts-container .terms {
-	font-size: 12px;
-	line-height: 16px;
 	color: #777;
 }
 .modal-content-login .terms input[type="checkbox"], .myaccounts-container .terms input[type="checkbox"] {
@@ -1697,8 +1697,6 @@ a.captionOrange:hover {
 }
 .create-account .tips {
 	padding-bottom: 28px;
-	font-size: 12px;
-	line-height: 16px;
 }
 .myaccount-container table {
 	width: 100%;
@@ -1721,6 +1719,7 @@ a.captionOrange:hover {
 .legent {
 	text-align: right;
 	padding-bottom: 8px;
+	font-size: 10px;
 }
 .myaccount-container form {
 	margin-top: 34px;
@@ -1753,13 +1752,13 @@ a.captionOrange:hover {
 .acc-details .form-item span {
 	color: #858585;
 	display: inline-block;
-	font-size: 12px;
 	font-weight: bold;
 	line-height: 14px;
 	padding-left: 4px;
 	position: relative;
 	top: 6px;
 	width: 146px;
+	box-sizing: border-box;
 }
 .myaccount-container .form-item input {
 	border: 1px #adadad solid;
@@ -1927,9 +1926,233 @@ a.captionOrange:hover {
 	background-position: -113px 0;
 	border: 0;
 }
-/*.efare-details .list .review{
-	color:#85B200;
-}*/
+/* #Checkout
+================================================== */
+.checkout-steps {
+	border: 2px #d3d3d3 solid;
+	border-radius: 5px;
+	background: url('../img/checkout-bg.jpg') repeat-x;
+	overflow: hidden;
+	width: 573px;
+	margin: 28px auto 24px;
+	box-sizing: border-box;
+}
+.checkout-steps .step {
+	box-sizing: border-box;
+	color: #a9a9a9;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 16px 17px 16px 70px;
+	position: relative;
+	width: 186px;
+}
+.checkout-steps .step label {
+	color: #ccc;
+	font-size: 36px;
+	font-weight: bold;
+	left: 14px;
+	line-height: 40px;
+	position: absolute;
+	top: 9px;
+}
+.checkout-steps .active {
+	background-color: #fb3a01;
+	color: #fff;
+}
+.checkout-steps .active:first-child, .checkout-steps .active:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 188px;
+}
+.checkout-steps .active label {
+	color: #fff;
+}
+.traveler-information, .checkout-container {
+	border: 1px solid #b0b0b0;
+	border-radius: 7px;
+	box-sizing: border-box;
+	margin-bottom: 39px;
+	margin-left: 34px;
+	overflow: hidden;
+}
+.checkout-item-price {
+	border-left: 1px #9b9b9b solid;
+	background: url('../img/price-bg.jpg') no-repeat;
+	min-height: 282px;
+}
+.checkout-item {
+	padding: 43px 33px 43px 50px;
+}
+.checkout-item-price {
+	padding: 26px 33px 43px 47px;
+}
+.checkout-item .image img {
+	border: 1px #d0d1d5 solid;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.checkout-item table td, .checkout-item-price label {
+	color: #666;
+}
+.checkout-item-price .price {
+	color: #000;
+	font-size: 37px;
+	line-height: 39px;
+}
+.checkout-item table td {
+	font-size: 13px;
+	padding: 5px 0;
+	text-align: left;
+	width: 166px;
+}
+.traveler-information {
+	padding: 26px 32px 30px;
+}
+.traveler-information select {
+	background: url('../img/icons/see-all-icon.png') 89.2% -54px no-repeat;
+	border: 1px #b1b1b1 solid;
+	border-radius: 5px;
+	color: #3b3b3b;
+	height: 27px;
+	padding: 0 38px 0 8px;
+	box-sizing: border-box;
+}
+.payment-form .form-item {
+	position: relative;
+}
+.traveler-information input {
+	height: 27px;
+	color: #666;
+	border: 1px #b1b1b1 solid;
+	border-radius: 5px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.traveler-information .category {
+	margin-bottom: 10px;
+	background-color: #efefef;
+	padding: 5px 0 5px 10px;
+	color: #000;
+	font-weight: bold;
+}
+.traveler-information .item {
+	margin-right: 10px;
+}
+.require {
+	color: #F00;
+}
+.traveler-information .row-item {
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+.payment-methods {
+	padding-top: 18px;
+	border-bottom: 1px #e9e9e9 solid;
+	padding-bottom: 17px;
+	margin-bottom: 10px;
+}
+.payment-methods img {
+	margin-right: 16px;
+}
+.row-item-child {
+	border-top: 1px #e9e9e9 solid;
+	padding-top: 10px;
+	margin-top: 10px;
+	border-bottom: 1px #e9e9e9 solid;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.selected-card {
+	font-size: 12px;
+	line-height: 15px;
+	padding-top: 6px;
+}
+.traveler-information .book-now-cta {
+	height: auto;
+	color: #fff;
+}
+.term-text {
+	position: relative;
+	padding-left: 20px;
+	color: #737373;
+}
+.term-text a {
+	text-decoration: underline;
+	color: #737373;
+}
+.term-text .book-now-cta {
+	float: right;
+}
+.term-text input[type='checkbox'] {
+	position: absolute;
+	left: 0;
+	top: -12px;
+}
+.payment-form form {
+	margin: 0 auto;
+	width: 526px;
+}
+.payment-form .form-item label {
+	width: 251px;
+	color: #333;
+	text-align: right;
+	padding-right: 37px;
+	padding-bottom: 18px;
+	box-sizing: border-box;
+}
+.payment-form .form-item span {
+	right: 1px;
+	top: 0;
+	width: auto;
+}
+.payment-form .form-item .value {
+	text-align: left;
+}
+.payment-form .button {
+	text-align: center;
+	margin-top: 20px;
+}
+.payment-form .form-item select {
+	box-shadow: none;
+	width: 102px;
+}
+.order-confirmation {
+	text-align: center;
+	padding: 47px 30px 97px;
+}
+.confirmation-msg {
+	margin: 0 auto;
+	width: 599px;
+}
+.confirmation-msg {
+	color: #525252;
+	font-weight: bold;
+	line-height: 16px;
+	padding-top: 23px;
+	text-align: left;
+}
+.confirmation-msg .links {
+	text-align: center;
+	padding-top: 71px;
+}
+.confirmation-msg .links a {
+	color: #777;
+	display: inline-block;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.confirmation-msg .links a:hover {
+	text-decoration: none;
+}
+.confirmation-msg .links a:first-child {
+	border-right: 1px #777 solid;
+	padding-right: 26px;
+	margin-right: 26px;
+}
 /* #FOOTER
 ================================================== */
 
@@ -2127,7 +2350,7 @@ footer {
 	padding-bottom: 40px;
 }
 }
- @media (max-width:350px) {
+@media (max-width:350px) {
 .top-attactions .list {
 	width: 100%;
 }
